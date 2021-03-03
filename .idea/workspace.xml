@@ -1,41 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/ROT_Engine/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/ROT_App/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="First commit" />
+    <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Engine/src/app.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Engine/src/app/log_rot.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_App-e85beaf978abff9e/bin-ROT_App" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_App-e85beaf978abff9e/bin-ROT_App.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_App-e85beaf978abff9e/dep-bin-ROT_App" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_App-e85beaf978abff9e/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_App-e85beaf978abff9e/output-bin-ROT_App" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_Engine-d773f05d4b8cf0ba/dep-lib-ROT_Engine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_Engine-d773f05d4b8cf0ba/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_Engine-d773f05d4b8cf0ba/lib-ROT_Engine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_Engine-d773f05d4b8cf0ba/lib-ROT_Engine.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/ROT_Engine-d773f05d4b8cf0ba/output-lib-ROT_Engine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot-71dd31a20fa4bc8a/output-lib-rot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_app-02bdb2cb3d8894a4/bin-rot_app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_app-02bdb2cb3d8894a4/bin-rot_app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_app-02bdb2cb3d8894a4/dep-bin-rot_app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_app-02bdb2cb3d8894a4/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_app-07aa9e40c24d82de/output-bin-rot_app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_engine-065cde6f46313755/dep-lib-rot_engine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_engine-065cde6f46313755/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_engine-065cde6f46313755/lib-rot_engine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rot_engine-065cde6f46313755/lib-rot_engine.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/ROT_App.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/ROT_App.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/ROT_App.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/app.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/app.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/app.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-040be1104d525433/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-040be1104d525433/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-040be1104d525433/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-040be1104d525433/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-cdc7548e40319009/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-cdc7548e40319009/build_script_build-cdc7548e40319009.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-cdc7548e40319009/build_script_build-cdc7548e40319009.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-cdc7548e40319009/build_script_build-cdc7548e40319009.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/libc-cdc7548e40319009/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-1475de6bb39b1dc5/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-1475de6bb39b1dc5/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-1475de6bb39b1dc5/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-1475de6bb39b1dc5/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-28ba85b836a039ac/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-28ba85b836a039ac/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-28ba85b836a039ac/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-28ba85b836a039ac/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-966a9a798ca783ee/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-966a9a798ca783ee/build_script_build-966a9a798ca783ee.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-966a9a798ca783ee/build_script_build-966a9a798ca783ee.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-966a9a798ca783ee/build_script_build-966a9a798ca783ee.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-966a9a798ca783ee/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-d34fb401dc71edd9/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-d34fb401dc71edd9/build_script_build-d34fb401dc71edd9.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-d34fb401dc71edd9/build_script_build-d34fb401dc71edd9.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-d34fb401dc71edd9/build_script_build-d34fb401dc71edd9.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/log-d34fb401dc71edd9/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-51536d305332fad6/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-51536d305332fad6/build_script_build-51536d305332fad6.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-51536d305332fad6/build_script_build-51536d305332fad6.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-51536d305332fad6/build_script_build-51536d305332fad6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-51536d305332fad6/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/out/probe0.ll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/out/probe1.ll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-integer-62f89cabc985ccb9/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/out/probe0.ll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/out/probe1.ll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/out/probe2.ll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-49b2e3373e6ee806/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-ac98e0e35c0dc4cf/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-ac98e0e35c0dc4cf/build_script_build-ac98e0e35c0dc4cf.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-ac98e0e35c0dc4cf/build_script_build-ac98e0e35c0dc4cf.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-ac98e0e35c0dc4cf/build_script_build-ac98e0e35c0dc4cf.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/num-traits-ac98e0e35c0dc4cf/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-54cb476e7e3dfccb/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-54cb476e7e3dfccb/build_script_build-54cb476e7e3dfccb.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-54cb476e7e3dfccb/build_script_build-54cb476e7e3dfccb.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-54cb476e7e3dfccb/build_script_build-54cb476e7e3dfccb.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-54cb476e7e3dfccb/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-5cb051fa9eb30678/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-5cb051fa9eb30678/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-5cb051fa9eb30678/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-5cb051fa9eb30678/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-71931d9d84fc7e25/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-71931d9d84fc7e25/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-71931d9d84fc7e25/root-output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-71931d9d84fc7e25/stderr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-a67bcf3ca2bc64c7/build-script-build.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-a67bcf3ca2bc64c7/build_script_build-a67bcf3ca2bc64c7.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-a67bcf3ca2bc64c7/build_script_build-a67bcf3ca2bc64c7.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-a67bcf3ca2bc64c7/build_script_build-a67bcf3ca2bc64c7.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/build/winapi-a67bcf3ca2bc64c7/build_script_build.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/ROT_App.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/ROT_App.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/ROT_App.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/ROT_Engine-d773f05d4b8cf0ba.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/libROT_Engine-d773f05d4b8cf0ba.rlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/libROT_Engine-d773f05d4b8cf0ba.rmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/librot-71dd31a20fa4bc8a.rlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/librot-ee9fd1fda6fb6af8.rlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/librot_engine-065cde6f46313755.rlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/librot_engine-065cde6f46313755.rmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/deps/rot_engine-065cde6f46313755.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/1cs2z383xg535bsz.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/1efbcj1ltecqsjy7.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/1j1pxj69y9qpnp0r.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/1rch6luw4b0y2urk.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/3york69if7spzb97.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/4cyujhe5k7vomqn9.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/5donup36krhmre96.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/dep-graph.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/h36f8uwdwqqqqnv.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/query-cache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422-2uubx7gfrqrko/work-products.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_app-1p1m8u3jfl0jr/s-fweb6bv8v7-lb6422.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_engine-3aesqnm2ulm50/s-fweb6bvacv-12ahkf4-2bxrekvmf76m4/3gk0qess4wpaffy6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_engine-3aesqnm2ulm50/s-fweb6bvacv-12ahkf4-2bxrekvmf76m4/dep-graph.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_engine-3aesqnm2ulm50/s-fweb6bvacv-12ahkf4-2bxrekvmf76m4/query-cache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_engine-3aesqnm2ulm50/s-fweb6bvacv-12ahkf4-2bxrekvmf76m4/work-products.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/incremental/rot_engine-3aesqnm2ulm50/s-fweb6bvacv-12ahkf4.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/libROT_Engine.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/libROT_Engine.rlib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/librot.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/debug/librot.rlib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ROT_Engine" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="wlih63jr" />
   </component>
   <component name="ProjectId" id="1pFz6RXWdWw7nNPhu4bnGPCy6zX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cargo run" />
+    </option>
   </component>
   <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package ROT_GameEngine --bin ROT_GameEngine" />
+      <option name="command" value="run" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -50,7 +210,7 @@
       </method>
     </configuration>
     <configuration name="Test" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="test --package ROT_GameEngine --lib tests" />
+      <option name="command" value="test" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -64,24 +224,15 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Test" />
+    </list>
   </component>
   <component name="RustProjectSettings">
     <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614793633090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros.">
+      <created>1614811451305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614811451305</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,10 +270,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ROT_App" />
+      <path value="$PROJECT_DIR$/ROT_Engine" />
+    </ignored-roots>
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

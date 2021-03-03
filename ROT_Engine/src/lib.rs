@@ -1,7 +1,10 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+pub mod app;
+use log::{debug, error, info, trace, warn};
+
+pub fn print_something_nice() {
+    info!("Something Nice =)");
+}
+
+pub fn do_another_thing() {
+    println!("Well hello");
 }
