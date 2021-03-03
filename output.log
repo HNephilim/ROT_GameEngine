@@ -1,0 +1,39 @@
+[2021-03-03][18:23:57][rot::app][INFO] info
+[2021-03-03][18:23:57][rot::app][WARN] Warn
+[2021-03-03][18:23:57][rot::app][DEBUG] debug
+[2021-03-03][18:45:55][rot::app][TRACE] Trace message
+[2021-03-03][18:45:55][rot::app][DEBUG] Debug message
+[2021-03-03][18:45:55][rot::app][INFO] Info message
+[2021-03-03][18:45:55][rot::app][WARN] Warning message
+[2021-03-03][18:45:55][rot::app][ERROR] Error message
+[2021-03-03][18:49:27][rot::app][[37mTRACE[0m] Trace message
+[2021-03-03][18:49:27][rot::app][[36mDEBUG[0m] Debug message
+[2021-03-03][18:49:27][rot::app][[32mINFO[0m] Info message
+[2021-03-03][18:49:27][rot::app][[33mWARN[0m] Warning message
+[2021-03-03][18:49:27][rot::app][[31mERROR[0m] Error message
+[2021-03-03][19:03:11][rot::app][[37mTRACE[0m] Trace message
+[2021-03-03][19:03:11][rot::app][[36mDEBUG[0m] Debug message
+[2021-03-03][19:03:11][rot::app][[32mINFO[0m] Info message
+[2021-03-03][19:03:11][rot::app][[33mWARN[0m] Warning message
+[2021-03-03][19:03:11][rot::app][[31mERROR[0m] Error message
+[2021-03-03][19:03:11][rot_app][[36mDEBUG[0m] Ending
+[2021-03-03][19:05:15][rot::app][[37mTRACE[0m] Trace message
+[2021-03-03][19:05:15][rot::app][[36mDEBUG[0m] Debug message
+[2021-03-03][19:05:15][rot::app][[32mINFO[0m] Info message
+[2021-03-03][19:05:15][rot::app][[33mWARN[0m] Warning message
+[2021-03-03][19:05:15][rot::app][[31mERROR[0m] Error message
+[2021-03-03][19:05:15][rot_app][[36mDEBUG[0m] Ending
+[2021-03-03][19:05:39][rot::app][[37mTRACE[0m] Trace message
+[2021-03-03][19:05:39][rot::app][[36mDEBUG[0m] Debug message
+[2021-03-03][19:05:39][rot::app][[32mINFO[0m] Info message
+[2021-03-03][19:05:39][rot::app][[33mWARN[0m] Warning message
+[2021-03-03][19:05:39][rot::app][[31mERROR[0m] Error message
+[2021-03-03][19:05:39][rot_app][[36mDEBUG[0m] Ending
+[2021-03-03][19:05:39][rot][[32mINFO[0m] Something Nice =)
+[2021-03-03][19:05:56][rot::app][[37mTRACE[0m] Trace message
+[2021-03-03][19:05:56][rot::app][[36mDEBUG[0m] Debug message
+[2021-03-03][19:05:56][rot::app][[32mINFO[0m] Info message
+[2021-03-03][19:05:56][rot::app][[33mWARN[0m] Warning message
+[2021-03-03][19:05:56][rot::app][[31mERROR[0m] Error message
+[2021-03-03][19:05:56][app][[36mDEBUG[0m] Ending
+[2021-03-03][19:05:56][rot][[32mINFO[0m] Something Nice =)
