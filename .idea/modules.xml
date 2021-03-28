@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ROT_App/ROT_App.iml" filepath="$PROJECT_DIR$/ROT_App/ROT_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" filepath="$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ROT_Events/ROT_Events.iml" filepath="$PROJECT_DIR$/ROT_Events/ROT_Events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" filepath="$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ROT_Winit_Window/ROT_Winit_Window.iml" filepath="$PROJECT_DIR$/ROT_Winit_Window/ROT_Winit_Window.iml" />
     </modules>
   </component>
 </project>

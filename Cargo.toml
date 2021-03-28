@@ -1,2 +1,5 @@
 [workspace]
-members = ["ROT_App"]
+members = ["ROT_App", "ROT_Engine", "ROT_VK_Renderer", "ROT_Events"]
+
+[profile.release]
+debug = true
