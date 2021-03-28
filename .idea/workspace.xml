@@ -13,40 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/ROT_Engine/src/layer_rot.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Engine/src/layerstack_rot.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/ROT_Events.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_structs/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_structs/vertex.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Winit_Window/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Winit_Window/src/builder/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Winit_Window/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_Winit_Window/src/window/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/app.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/app/log_rot.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/log_rot.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/app.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/app.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/app.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/app.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/app.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/app.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/librot.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/librot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/debug/librot.rlib" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/librot.rlib" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616896591569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Did a bunch of things">
+      <created>1616896983255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616896983255</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +215,8 @@
     <MESSAGE value="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros." />
     <MESSAGE value="DUUDE I did a bunch of thing.&#10;&#10;Mainly now i can render stuff =) How to make it dinamic? Problem to Erick of Tomorrow.&#10;&#10;Got rid of ROT_Winit_Window. It made things confuse.&#10;Now windowing is dealt by the ROT_VK_Renderer.&#10;It now translate the winit events (on ROT_Events)&#10;&#10;Next step. HUD =)" />
     <MESSAGE value="Changing gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing gitignore" />
+    <MESSAGE value="Did a bunch of things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did a bunch of things" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

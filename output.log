@@ -4198,3 +4198,16 @@
 [2021-03-27][22:46:18][rot_vk][[37mTRACE[0m] Device creation succesfull
 [2021-03-27][22:46:18][rot_vk][[37mTRACE[0m] Getting queue id 0 in family id 0
 [2021-03-27][22:46:18][rot_vk][[37mTRACE[0m] Swapchain created successful
+[2021-03-27][23:09:06][rot_vk][[32mINFO[0m] VULKAN RENDERER BUILDING!
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Instance, create successfully!
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Device Availiable = 0 - GeForce GTX 1070
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Getting device 0
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Physical Device Acquired Successfully
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Queue id 0 supports 16 queues. Support Graphics true - Support_Compute true
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Queue id 1 supports 2 queues. Support Graphics false - Support_Compute false
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Queue id 2 supports 8 queues. Support Graphics false - Support_Compute true
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Surface acquired on window
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Acquired queue family with id 0 for device creation
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Device creation succesfull
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Getting queue id 0 in family id 0
+[2021-03-27][23:09:06][rot_vk][[37mTRACE[0m] Swapchain created successful
