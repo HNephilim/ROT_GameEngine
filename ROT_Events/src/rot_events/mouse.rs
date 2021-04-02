@@ -9,9 +9,6 @@ pub struct ROT_MouseEvent {
     pub mouse_movement: Option<ROT_MouseMovement>,
 }
 
-impl ROT_Event for ROT_MouseEvent {}
-unsafe impl Send for ROT_MouseEvent {}
-
 #[derive(Debug)]
 pub struct ROT_MouseButton {
     pub state: ROT_State,

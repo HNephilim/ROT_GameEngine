@@ -1,5 +1,5 @@
 [package]
-name = "rot"
+name = "rot_gui"
 version = "0.1.0"
 authors = ["HNephilim <erickdpiva@gmail.com>"]
 edition = "2018"
@@ -7,16 +7,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-log = "0.4.14"
-fern = {version = "0.6.0", features = ["colored"]}
-chrono = "0.4.19"
-vulkano = "0.21.0"
-vulkano-win = "0.21.0"
-vulkano-shaders = "0.21.0"
-winit = "0.24.0"
-
-
-rot_vk = {path = "..\\ROT_VK_Renderer"}
 rot_events = {path = "..\\ROT_Events"}
 rot_layer = {path = "..\\ROT_Layer"}
-rot_gui = {path = "..\\ROT_GUI_IMGUI"}
+
+imgui = "0.7.0"
+winit = "0.24.0"

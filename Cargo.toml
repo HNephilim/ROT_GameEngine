@@ -1,5 +1,5 @@
 [workspace]
-members = ["ROT_App", "ROT_Engine", "ROT_VK_Renderer", "ROT_Events"]
+members = ["ROT_App", "ROT_Engine", "ROT_VK_Renderer", "ROT_Events", "ROT_GUI_IMGUI", "ROT_Layer"]
 
 [profile.release]
 debug = true

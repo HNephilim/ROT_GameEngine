@@ -8,10 +8,7 @@ pub struct ROT_KeyboardInputEvent {
     pub virtual_keycode: Option<KeyCode>,
 }
 
-impl ROT_Event for ROT_KeyboardInputEvent {}
-unsafe impl Send for ROT_KeyboardInputEvent {}
-
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub enum KeyCode {
     /// For when a event is dispatch with no KeyCode
     None,

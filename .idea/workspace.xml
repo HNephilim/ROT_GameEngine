@@ -10,10 +10,33 @@
     <cargoProject FILE="$PROJECT_DIR$/ROT_VK_Renderer/vendor/glad-vulkan/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/ROT_Winit_Window/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/ROT_Events/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ROT_GUI_Conrod/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/ROT_Layers/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/ROT_GUI_IMGUI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Layer/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Layer/ROT_Layer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Layer/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/layer_rot.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/layerstack_rot.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerstack/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ROT_Winit_Window" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/IMGUI/imgui-rs" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -77,10 +100,25 @@
       <command value="cargo run" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Expand rot_events::rot_events::commom [rot_events]">
+  <component name="RunManager" selected="Cargo.Expand rot_gui [rot_events]">
     <configuration name="Expand rot_events::rot_events::commom [rot_events]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="expand --lib --color=always --theme=GitHub --tests rot_events::commom" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_Events" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Expand rot_gui [rot_events]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="expand --lib --color=always --theme=GitHub --tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_GUI_IMGUI" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
@@ -127,9 +165,11 @@
       <item itemvalue="Cargo.Run" />
       <item itemvalue="Cargo.Test" />
       <item itemvalue="Cargo.Expand rot_events::rot_events::commom [rot_events]" />
+      <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
         <item itemvalue="Cargo.Expand rot_events::rot_events::commom [rot_events]" />
       </list>
     </recent_temporary>
@@ -190,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616896983255</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finalizing commit">
+      <created>1616897419708</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616897419708</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +263,8 @@
     <MESSAGE value="DUUDE I did a bunch of thing.&#10;&#10;Mainly now i can render stuff =) How to make it dinamic? Problem to Erick of Tomorrow.&#10;&#10;Got rid of ROT_Winit_Window. It made things confuse.&#10;Now windowing is dealt by the ROT_VK_Renderer.&#10;It now translate the winit events (on ROT_Events)&#10;&#10;Next step. HUD =)" />
     <MESSAGE value="Changing gitignore" />
     <MESSAGE value="Did a bunch of things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did a bunch of things" />
+    <MESSAGE value="Finalizing commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizing commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
