@@ -1,3 +1,5 @@
+#[allow(unused_imports)]
+#[allow(non_camel_case_types)]
 use crate::ROT_KeyboardInput::{KeyCode, ROT_KeyboardInputEvent};
 use crate::ROT_MouseInput::{
     Coord, ROT_Button, ROT_MouseButton, ROT_MouseEvent, ROT_MouseMovement, ROT_MouseWheel,

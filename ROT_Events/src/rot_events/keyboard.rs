@@ -1,3 +1,5 @@
+#[allow(unused_imports)]
+#[allow(non_camel_case_types)]
 use crate::rot_events::commom::ROT_State;
 use crate::rot_events::ROT_Event_Base::ROT_Event;
 

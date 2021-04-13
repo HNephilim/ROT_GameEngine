@@ -1,3 +1,5 @@
+#[allow(unused_imports)]
+#[allow(non_camel_case_types)]
 use imgui::{BackendFlags, Context, Key};
 use rot_events::ROT_Event_Base::{ROT_Event, ROT_State};
 use rot_events::{
@@ -45,7 +47,7 @@ impl ROT_Gui {
         }
     }
 
-    pub fn attach_window(&mut self, window: &Window) {}
+    pub fn attach_window(&mut self, _window: &Window) {}
 }
 
 impl ROT_Layer for ROT_Gui {

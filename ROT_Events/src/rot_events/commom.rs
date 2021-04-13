@@ -1,3 +1,5 @@
+#[allow(unused_imports)]
+#[allow(non_camel_case_types)]
 use crate::rot_events::ROT_KeyboardInput::ROT_KeyboardInputEvent;
 use crate::rot_events::ROT_MouseInput::ROT_MouseEvent;
 use std::fmt::{Debug, Formatter, Pointer};

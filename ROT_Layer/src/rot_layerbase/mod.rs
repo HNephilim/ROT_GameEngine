@@ -1,3 +1,5 @@
+#[allow(unused_imports)]
+#[allow(non_camel_case_types)]
 use log::{debug, error, info, trace, warn};
 use rot_events::ROT_Event_Base::ROT_Event;
 use std::sync::Arc;
