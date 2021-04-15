@@ -106,7 +106,12 @@ impl ROT_Layer for ROT_Gui {
     }
 
     fn on_update(&mut self, delta_time: f64) {
-        todo!()
+        let ui = self.context.frame();
+
+        let mut demo_window_open = true;
+        ui.show_demo_window(&mut demo_window_open);
+
+        let draw_data = ui.render();
     }
 
     fn assign_index(&mut self, index: usize) {

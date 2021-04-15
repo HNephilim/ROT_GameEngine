@@ -8,6 +8,9 @@ edition = "2018"
 
 [dependencies]
 log = "0.4.14"
-erupt = "0.18.0+174"
+ash = "0.32.1"
+ash-window = "0.6.0"
+vk-mem = "0.2.2"
 winit = "0.24.0"
+nalgebra = "0.26.1"
 rot_events = {path = "..\\ROT_Events"}

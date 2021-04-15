@@ -14,31 +14,17 @@
     <cargoProject FILE="$PROJECT_DIR$/ROT_Layers/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/compileshader.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/fragment.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/vertex.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/sync_usage.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/vert.spv" afterDir="false" />
+    <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="Dude i made a lot of things again">
+      <change afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/common/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerstack/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerstack/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_structs/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_structs/vertex.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/vertex.vert" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/vertex.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/vert.spv" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/vert.spv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/ERUPT/erupt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/VULKAN/vk-mem-rs" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -149,7 +135,6 @@
       <option name="redirectInputPath" value="" />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
@@ -168,6 +153,12 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Test" />
+      <item itemvalue="Cargo.Expand rot_events::rot_events::commom [rot_events]" />
+      <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
@@ -246,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617322258882</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Dude i made a lot of things again">
+      <created>1618276451074</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618276451074</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +272,8 @@
     <MESSAGE value="Did a bunch of things" />
     <MESSAGE value="Finalizing commit" />
     <MESSAGE value="Receiving events, dealing with it, and render fixed stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="Receiving events, dealing with it, and render fixed stuff." />
+    <MESSAGE value="Dude i made a lot of things again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dude i made a lot of things again" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
