@@ -1,18 +1,13 @@
 #[allow(unused_imports)]
-#[allow(non_camel_case_types)]
 use log::{debug, error, info, trace, warn};
 
 use crate::common::Vertex;
-use ash::extensions::ext::DebugUtils;
-use ash::extensions::khr::{Surface, Swapchain};
-use ash::prelude::*;
-use ash::version::{DeviceV1_0, EntryV1_0, InstanceV1_0};
-use ash::{vk, Device, Entry, Instance};
-use std::borrow::Borrow;
+
+use ash::version::DeviceV1_0;
+use ash::{vk, Device};
+
 use std::ffi::CString;
 use std::fs;
-use std::sync::Arc;
-use winit::window::CursorIcon::Grab;
 
 #[derive(Default)]
 pub struct GraphicsPipeline {
@@ -112,7 +107,7 @@ impl GraphicsPipeline {
 impl<'a> GraphicsPipeline {
     fn build_graphics_pipeline(
         device: &Device,
-        shader_stages: &Vec<vk::PipelineShaderStageCreateInfo>,
+        shader_stages: &[vk::PipelineShaderStageCreateInfo],
         vertex_input: &vk::PipelineVertexInputStateCreateInfo,
         input_assembly: &vk::PipelineInputAssemblyStateCreateInfo,
         viewport: &vk::PipelineViewportStateCreateInfo,
@@ -137,12 +132,10 @@ impl<'a> GraphicsPipeline {
             .subpass(0)
             .build();
 
-        let pipeline = unsafe {
+        unsafe {
             device.create_graphics_pipelines(vk::PipelineCache::null(), &[pipeline_info], None)
         }
-        .unwrap()[0];
-
-        pipeline
+        .unwrap()[0]
     }
 
     fn create_renderpass(device: &Device, format: &vk::SurfaceFormatKHR) -> vk::RenderPass {
@@ -181,22 +174,17 @@ impl<'a> GraphicsPipeline {
             .subpasses(&subpasses)
             .dependencies(&dependencies);
 
-        let render_pass = unsafe { device.create_render_pass(&render_pass_info, None) }.unwrap();
-
-        render_pass
+        unsafe { device.create_render_pass(&render_pass_info, None) }.unwrap()
     }
 
     fn create_pipeline_layout(device: &Device) -> vk::PipelineLayout {
         let pipeline_layout_info = vk::PipelineLayoutCreateInfo::builder().build();
 
-        let pipeline_layout =
-            unsafe { device.create_pipeline_layout(&pipeline_layout_info, None) }.unwrap();
-
-        pipeline_layout
+        unsafe { device.create_pipeline_layout(&pipeline_layout_info, None) }.unwrap()
     }
 
     fn create_dynamic_state(
-        dynamic_states_wanted: &'a Vec<vk::DynamicState>,
+        dynamic_states_wanted: &'a [vk::DynamicState],
     ) -> vk::PipelineDynamicStateCreateInfo {
         let dynamic_state = vk::PipelineDynamicStateCreateInfo::builder()
             .dynamic_states(&dynamic_states_wanted)
@@ -206,7 +194,7 @@ impl<'a> GraphicsPipeline {
     }
 
     fn create_color_blend_state(
-        colorblend_attachment_vec: &'a Vec<vk::PipelineColorBlendAttachmentState>,
+        colorblend_attachment_vec: &'a [vk::PipelineColorBlendAttachmentState],
     ) -> vk::PipelineColorBlendStateCreateInfo {
         let color_blending = vk::PipelineColorBlendStateCreateInfo::builder()
             .logic_op_enable(false)
@@ -264,8 +252,8 @@ impl<'a> GraphicsPipeline {
     }
 
     fn create_viewport_state(
-        viewports_vec: &'a Vec<vk::Viewport>,
-        scissors_vec: &'a Vec<vk::Rect2D>,
+        viewports_vec: &'a [vk::Viewport],
+        scissors_vec: &'a [vk::Rect2D],
     ) -> vk::PipelineViewportStateCreateInfo {
         let viewport_state = vk::PipelineViewportStateCreateInfo::builder()
             .viewports(viewports_vec)

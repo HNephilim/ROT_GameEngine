@@ -1,34 +1,31 @@
-#[allow(unused_imports)]
-#[allow(non_camel_case_types)]
-use crate::rot_events::commom::ROT_State;
-use crate::rot_events::ROT_Event_Base::ROT_Event;
+use crate::rot_events::commom::State;
 
 #[derive(Debug)]
-pub struct ROT_MouseEvent {
+pub struct MouseEvent {
     pub ev_type: TypeOfMouseEvent,
-    pub mouse_button: Option<ROT_MouseButton>,
-    pub mouse_wheel: Option<ROT_MouseWheel>,
-    pub mouse_movement: Option<ROT_MouseMovement>,
+    pub mouse_button: Option<MouseButton>,
+    pub mouse_wheel: Option<MouseWheel>,
+    pub mouse_movement: Option<MouseMovement>,
 }
 
 #[derive(Debug)]
-pub struct ROT_MouseButton {
-    pub state: ROT_State,
-    pub button: ROT_Button,
+pub struct MouseButton {
+    pub state: State,
+    pub button: Button,
 }
 
 #[derive(Debug)]
-pub struct ROT_MouseWheel {
+pub struct MouseWheel {
     pub line_delta: Coord<f64>,
 }
 
 #[derive(Debug)]
-pub struct ROT_MouseMovement {
+pub struct MouseMovement {
     pub position: Coord<f64>,
 }
 
 #[derive(Debug)]
-pub enum ROT_Button {
+pub enum Button {
     Left,
     Right,
     Middle,

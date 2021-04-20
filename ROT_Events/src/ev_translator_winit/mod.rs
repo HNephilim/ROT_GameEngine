@@ -1,40 +1,34 @@
 #[allow(unused_imports)]
-#[allow(non_camel_case_types)]
-use crate::ROT_KeyboardInput::{KeyCode, ROT_KeyboardInputEvent};
-use crate::ROT_MouseInput::{
-    Coord, ROT_Button, ROT_MouseButton, ROT_MouseEvent, ROT_MouseMovement, ROT_MouseWheel,
-    TypeOfMouseEvent,
-};
-
-use crate::ROT_Event_Base::ROT_State;
 use log::{debug, error, info, trace, warn};
 
-use crate::rot_events::keyboard::KeyCode::{
-    F1, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F2, F20, F21, F22, F23, F24, F3, F4, F5,
-    F6, F7, F8, F9,
+use crate::rot_events::Event_Base::State;
+use crate::rot_events::KeyboardInput::{KeyCode, KeyboardInputEvent};
+use crate::rot_events::MouseInput::{
+    Button, Coord, MouseButton, MouseEvent, MouseMovement, MouseWheel, TypeOfMouseEvent,
 };
-use winit::event::VirtualKeyCode::Escape;
-use winit::event::WindowEvent::{CursorMoved, MouseInput, MouseWheel};
-use winit::event::{ElementState, MouseButton, MouseScrollDelta, VirtualKeyCode, WindowEvent};
 
-pub fn mouse_event(event: WindowEvent) -> Option<ROT_MouseEvent> {
+use winit::event::{
+    ElementState, MouseButton as mb, MouseScrollDelta, VirtualKeyCode, WindowEvent,
+};
+
+pub fn mouse_event(event: &WindowEvent) -> Option<MouseEvent> {
     match event {
         WindowEvent::MouseInput { state, button, .. } => {
             let rot_state = match state {
-                ElementState::Pressed => ROT_State::Pressed,
-                ElementState::Released => ROT_State::Released,
+                ElementState::Pressed => State::Pressed,
+                ElementState::Released => State::Released,
             };
 
             let rot_button = match button {
-                MouseButton::Left => ROT_Button::Left,
-                MouseButton::Right => ROT_Button::Right,
-                MouseButton::Middle => ROT_Button::Middle,
-                MouseButton::Other(a) => ROT_Button::Other(a),
+                mb::Left => Button::Left,
+                mb::Right => Button::Right,
+                mb::Middle => Button::Middle,
+                mb::Other(a) => Button::Other(*a),
             };
 
-            Some(ROT_MouseEvent {
+            Some(MouseEvent {
                 ev_type: TypeOfMouseEvent::Button,
-                mouse_button: Some(ROT_MouseButton {
+                mouse_button: Some(MouseButton {
                     state: rot_state,
                     button: rot_button,
                 }),
@@ -42,11 +36,11 @@ pub fn mouse_event(event: WindowEvent) -> Option<ROT_MouseEvent> {
                 mouse_movement: None,
             })
         }
-        WindowEvent::CursorMoved { position, .. } => Some(ROT_MouseEvent {
+        WindowEvent::CursorMoved { position, .. } => Some(MouseEvent {
             ev_type: TypeOfMouseEvent::Movement,
             mouse_button: None,
             mouse_wheel: None,
-            mouse_movement: Some(ROT_MouseMovement {
+            mouse_movement: Some(MouseMovement {
                 position: Coord {
                     x: position.x,
                     y: position.y,
@@ -55,13 +49,13 @@ pub fn mouse_event(event: WindowEvent) -> Option<ROT_MouseEvent> {
         }),
         WindowEvent::MouseWheel { delta, .. } => {
             let (x, y) = match delta {
-                MouseScrollDelta::LineDelta(x, y) => (x as f64, y as f64),
+                MouseScrollDelta::LineDelta(x, y) => (*x as f64, *y as f64),
                 MouseScrollDelta::PixelDelta(pos) => (pos.x, pos.y),
             };
-            Some(ROT_MouseEvent {
+            Some(MouseEvent {
                 ev_type: TypeOfMouseEvent::Wheel,
                 mouse_button: None,
-                mouse_wheel: Some(ROT_MouseWheel {
+                mouse_wheel: Some(MouseWheel {
                     line_delta: Coord { x, y },
                 }),
                 mouse_movement: None,
@@ -71,12 +65,12 @@ pub fn mouse_event(event: WindowEvent) -> Option<ROT_MouseEvent> {
     }
 }
 
-pub fn keyboard_input_event(event: WindowEvent) -> Option<ROT_KeyboardInputEvent> {
+pub fn keyboard_input_event(event: &WindowEvent) -> Option<KeyboardInputEvent> {
     match event {
         WindowEvent::KeyboardInput { input, .. } => {
             let rot_state = match input.state {
-                ElementState::Pressed => ROT_State::Pressed,
-                ElementState::Released => ROT_State::Released,
+                ElementState::Pressed => State::Pressed,
+                ElementState::Released => State::Released,
             };
 
             let rot_scancode = input.scancode;
@@ -214,7 +208,7 @@ pub fn keyboard_input_event(event: WindowEvent) -> Option<ROT_KeyboardInputEvent
                     VirtualKeyCode::NavigateBackward => KeyCode::NavigateBackward,
                     VirtualKeyCode::NextTrack => KeyCode::NextTrack,
                     VirtualKeyCode::NoConvert => KeyCode::NoConvert,
-                    VirtualKeyCode::OEM102 => KeyCode::OEM102,
+                    VirtualKeyCode::OEM102 => KeyCode::Oem102,
                     VirtualKeyCode::Period => KeyCode::Period,
                     VirtualKeyCode::PlayPause => KeyCode::PlayPause,
                     VirtualKeyCode::Plus => KeyCode::Plus,
@@ -250,7 +244,7 @@ pub fn keyboard_input_event(event: WindowEvent) -> Option<ROT_KeyboardInputEvent
                 },
             };
 
-            Some(ROT_KeyboardInputEvent {
+            Some(KeyboardInputEvent {
                 state: rot_state,
                 scancode: rot_scancode,
                 virtual_keycode: Some(rot_key),

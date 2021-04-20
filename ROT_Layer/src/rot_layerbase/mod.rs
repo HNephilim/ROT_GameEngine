@@ -1,23 +1,14 @@
 #[allow(unused_imports)]
-#[allow(non_camel_case_types)]
 use log::{debug, error, info, trace, warn};
-use rot_events::ROT_Event_Base::ROT_Event;
-use std::sync::Arc;
+use rot_events::Event_Base::Event;
+use rot_wgpu::Renderer;
 
-pub trait ROT_Layer {
-    fn enable(&mut self);
+pub trait Layer {
+    fn on_attach(&mut self, renderer: &Renderer);
 
-    fn disable(&mut self);
+    fn on_event(&mut self, event: &Event);
 
-    fn is_enabled(&self) -> bool;
-
-    fn on_event(&mut self, event: &ROT_Event);
-
-    fn on_update(&mut self, delta_time: f64);
-
-    fn assign_index(&mut self, index: usize);
-
-    fn disable_index(&mut self);
+    fn on_update(&mut self, renderer: &mut Renderer, delta_time: f64);
 
     fn get_name(&self) -> &String;
 }

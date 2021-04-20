@@ -1,30 +1,26 @@
 #[allow(unused_imports)]
-#[allow(non_camel_case_types)]
 use imgui::{BackendFlags, Context, Key};
-use rot_events::ROT_Event_Base::{ROT_Event, ROT_State};
+use rot_events::Event_Base::{Event, State};
 use rot_events::{
-    ROT_KeyboardInput::{KeyCode, ROT_KeyboardInputEvent},
-    ROT_MouseInput::{
-        Coord, ROT_Button, ROT_MouseButton, ROT_MouseEvent, ROT_MouseMovement, ROT_MouseWheel,
-        TypeOfMouseEvent,
-    },
+    KeyboardInput::KeyCode,
+    MouseInput::{Button, TypeOfMouseEvent},
 };
-use rot_layer::ROT_Layer;
-use std::sync::Arc;
+use rot_layer::Layer;
+
+use rot_wgpu::Renderer;
 use winit::dpi::LogicalSize;
 use winit::window::Window;
 
-pub struct ROT_Gui {
+pub struct Gui {
     context: Context,
     scale_factor: f64,
 
     //for ROT_Layer implementation
     name: String,
-    is_enabled: bool,
     index_on_stack: Option<usize>,
 }
 
-impl ROT_Gui {
+impl Gui {
     pub fn build(name: String, window: &Window) -> Self {
         let mut context = Context::create();
 
@@ -38,11 +34,10 @@ impl ROT_Gui {
         let logical_size: LogicalSize<f32> = window.inner_size().to_logical(scale_factor);
         io.display_size = [logical_size.width as f32, logical_size.height as f32];
 
-        ROT_Gui {
+        Gui {
             context,
             scale_factor,
             name,
-            is_enabled: false,
             index_on_stack: None,
         }
     }
@@ -50,31 +45,21 @@ impl ROT_Gui {
     pub fn attach_window(&mut self, _window: &Window) {}
 }
 
-impl ROT_Layer for ROT_Gui {
-    fn enable(&mut self) {
-        self.is_enabled = true;
-    }
+impl Layer for Gui {
+    fn on_attach(&mut self, renderer: &Renderer) {}
 
-    fn disable(&mut self) {
-        self.is_enabled = false;
-    }
-
-    fn is_enabled(&self) -> bool {
-        self.is_enabled
-    }
-
-    fn on_event(&mut self, event: &ROT_Event) {
+    fn on_event(&mut self, event: &Event) {
         let io = self.context.io_mut();
         match event {
-            ROT_Event::MouseInput(ev) => match ev.ev_type {
+            Event::MouseInput(ev) => match ev.ev_type {
                 TypeOfMouseEvent::Button => {
                     let button = ev.mouse_button.as_ref().unwrap();
-                    let pressed = button.state == ROT_State::Pressed;
+                    let pressed = button.state == State::Pressed;
                     match button.button {
-                        ROT_Button::Left => io.mouse_down[0] = pressed,
-                        ROT_Button::Right => io.mouse_down[1] = pressed,
-                        ROT_Button::Middle => io.mouse_down[2] = pressed,
-                        ROT_Button::Other(a) => io.mouse_down[a as usize] = pressed,
+                        Button::Left => io.mouse_down[0] = pressed,
+                        Button::Right => io.mouse_down[1] = pressed,
+                        Button::Middle => io.mouse_down[2] = pressed,
+                        Button::Other(a) => io.mouse_down[a as usize] = pressed,
                     }
                 }
                 TypeOfMouseEvent::Wheel => {
@@ -89,8 +74,8 @@ impl ROT_Layer for ROT_Gui {
                     io.mouse_pos = [x as f32, y as f32];
                 }
             },
-            ROT_Event::KeyboardInput(ev) => {
-                let pressed = ev.state == ROT_State::Pressed;
+            Event::KeyboardInput(ev) => {
+                let pressed = ev.state == State::Pressed;
                 let key = *ev.virtual_keycode.as_ref().unwrap();
                 io.keys_down[key as usize] = pressed;
 
@@ -105,22 +90,7 @@ impl ROT_Layer for ROT_Gui {
         }
     }
 
-    fn on_update(&mut self, delta_time: f64) {
-        let ui = self.context.frame();
-
-        let mut demo_window_open = true;
-        ui.show_demo_window(&mut demo_window_open);
-
-        let draw_data = ui.render();
-    }
-
-    fn assign_index(&mut self, index: usize) {
-        self.index_on_stack = Some(index);
-    }
-
-    fn disable_index(&mut self) {
-        self.index_on_stack = None;
-    }
+    fn on_update(&mut self, renderer: &mut Renderer, delta_time: f64) {}
 
     fn get_name(&self) -> &String {
         &self.name

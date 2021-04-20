@@ -1,24 +1,20 @@
 #[allow(unused_imports)]
-#[allow(non_camel_case_types)]
 use log::{debug, error, info, trace, warn};
 
 use ash::extensions::ext::DebugUtils;
 use ash::extensions::khr::{Surface, Swapchain};
-use ash::prelude::*;
 use ash::version::{DeviceV1_0, EntryV1_0, InstanceV1_0};
 use ash::{vk, Device, Entry, Instance};
 
 use std::collections::HashMap;
-use std::ffi::{c_void, CStr, CString};
+use std::ffi::{CStr, CString};
 
 use winit::dpi::PhysicalSize;
 use winit::dpi::Size::Physical;
 use winit::platform::run_return::EventLoopExtRunReturn;
 use winit::window::Window;
 use winit::{
-    event::{
-        DeviceEvent, ElementState, Event, KeyboardInput, StartCause, VirtualKeyCode, WindowEvent,
-    },
+    event::{Event, WindowEvent},
     event_loop::{ControlFlow, EventLoop},
     window::WindowBuilder,
 };
@@ -33,7 +29,7 @@ mod common;
 use common::Vertex;
 use std::mem::size_of;
 
-pub struct ROT_Renderer {
+pub struct Renderer {
     //Sync
     fences_map: HashMap<FenceUsage, usize>,
     fences_vec: Vec<vk::Fence>,
@@ -91,13 +87,13 @@ pub struct ROT_Renderer {
     max_frames_in_flight: u8,
     current_frame: usize,
 }
-impl ROT_Renderer {
+impl Renderer {
     pub fn build(dimension: [u32; 2], debug: bool, frames_in_flight: u8) -> Self {
         let device_extension_needed: Vec<*const i8> = vec![Swapchain::name().as_ptr()];
+        let layer = CString::new("VK_LAYER_KHRONOS_validation").unwrap();
+
         let device_layers_needed: Vec<*const i8> = if debug {
-            vec![CString::new("VK_LAYER_KHRONOS_validation")
-                .unwrap()
-                .as_ptr()]
+            vec![layer.as_ptr()]
         } else {
             Vec::new()
         };
@@ -105,7 +101,7 @@ impl ROT_Renderer {
         info!("SETTING UP VULKAN RENDERER");
 
         trace!("Building Event loop and window");
-        let (event_loop, window) = ROT_Renderer::window_init(dimension);
+        let (event_loop, window) = Renderer::window_init(dimension);
 
         trace!("Loading Entry Functions");
         let entry_loader = unsafe { Entry::new() }.unwrap();
@@ -133,18 +129,17 @@ impl ROT_Renderer {
         );
 
         trace!("Building Instance");
-        let instance_loader = ROT_Renderer::create_instance(&entry_loader, &window, debug);
+        let instance_loader = Renderer::create_instance(&entry_loader, &window, debug);
 
         trace!("Getting Surface and setting it up");
         let (surface_loader, surface) =
-            ROT_Renderer::create_surface(&entry_loader, &instance_loader, &window);
+            Renderer::create_surface(&entry_loader, &instance_loader, &window);
 
         let mut debug_loader = None;
         let mut debug_manager = None;
         if debug {
             trace!("Building Vulkan Debug callback");
-            let (loader, manager) =
-                (ROT_Renderer::build_debug_callback(&entry_loader, &instance_loader));
+            let (loader, manager) = Renderer::build_debug_callback(&entry_loader, &instance_loader);
 
             debug_loader = Some(loader);
             debug_manager = Some(manager);
@@ -152,10 +147,10 @@ impl ROT_Renderer {
 
         trace!("Querying Physical Device and it's graphics queues");
         let (phys_device, queue_family) =
-            ROT_Renderer::get_physical_device(&instance_loader, &surface_loader, &surface).unwrap();
+            Renderer::get_physical_device(&instance_loader, &surface_loader, &surface).unwrap();
 
         trace!("Getting format, present mode and physical device properties");
-        let (format, present_mode, device_properties) = ROT_Renderer::get_physical_device_data(
+        let (format, present_mode, device_properties) = Renderer::get_physical_device_data(
             &instance_loader,
             &phys_device,
             &surface_loader,
@@ -164,7 +159,7 @@ impl ROT_Renderer {
         .unwrap();
 
         trace!("Creating device and queue");
-        let (device, graphics_queue) = ROT_Renderer::create_device_and_queue(
+        let (device, graphics_queue) = Renderer::create_device_and_queue(
             &instance_loader,
             &phys_device,
             queue_family,
@@ -174,7 +169,7 @@ impl ROT_Renderer {
 
         trace!("Building the Swapchain");
         let (swapchain_loader, swapchain, images_vec, extend) =
-            ROT_Renderer::build_swapchain_and_images(
+            Renderer::build_swapchain_and_images(
                 &instance_loader,
                 &device,
                 &phys_device,
@@ -187,7 +182,7 @@ impl ROT_Renderer {
         trace!("images vec len {}", images_vec.len());
 
         trace!("Creating Images View");
-        let imageview_vec = ROT_Renderer::create_images_view(&device, &images_vec, &format);
+        let imageview_vec = Renderer::create_images_view(&device, &images_vec, &format);
 
         info!("VULKAN RENDERED BUILT!");
 
@@ -196,7 +191,7 @@ impl ROT_Renderer {
         info!("GRAPHICS PIPELINE BUILT");
 
         trace!("Creating Framebuffer");
-        let swapchain_framebuffer = ROT_Renderer::create_framebuffer(
+        let swapchain_framebuffer = Renderer::create_framebuffer(
             &device,
             &imageview_vec,
             graphics_pipeline.render_pass,
@@ -204,18 +199,17 @@ impl ROT_Renderer {
         );
 
         trace!("Building Command Pools");
-        let command_pool = ROT_Renderer::create_command_pool(&device, queue_family);
+        let command_pool = Renderer::create_command_pool(&device, queue_family);
 
         trace!("Building Vertex Buffer");
-        let vertex_buffer =
-            ROT_Renderer::create_vertex_buffer(&device, &instance_loader, &phys_device);
+        let vertex_buffer = Renderer::create_vertex_buffer(&device, &instance_loader, &phys_device);
 
         trace!("Building Command Buffer");
         let command_buffer =
-            ROT_Renderer::create_command_buffer(&device, command_pool, images_vec.len());
+            Renderer::create_command_buffer(&device, command_pool, images_vec.len());
 
         trace!("Creating Vulkan Sync Devices");
-        let semaphores_vec = ROT_Renderer::create_semaphores(&device, frames_in_flight);
+        let semaphores_vec = Renderer::create_semaphores(&device, frames_in_flight);
         let mut semaphore_map: HashMap<SemaphoreUsage, usize> = HashMap::new();
         let mut semaphore_vec_index: usize = 0;
         for index in 0..frames_in_flight as usize {
@@ -225,7 +219,7 @@ impl ROT_Renderer {
             semaphore_vec_index += 1;
         }
 
-        let mut fences_vec = ROT_Renderer::create_fences(&device, (frames_in_flight as u8));
+        let mut fences_vec = Renderer::create_fences(&device, frames_in_flight as u8);
         let mut fences_map: HashMap<FenceUsage, usize> = HashMap::new();
         let mut fence_vec_index: usize = 0;
         for index in 0..frames_in_flight as usize {
@@ -239,7 +233,7 @@ impl ROT_Renderer {
         }
 
         info!("DONE!");
-        ROT_Renderer {
+        Renderer {
             fences_map,
             fences_vec,
             semaphore_map,
@@ -297,7 +291,7 @@ impl ROT_Renderer {
                     let vkc = input.virtual_keycode;
                     match vkc {
                         Some(key) => match key {
-                            VirtualKeyCode::A => {
+                            event::VirtualKeyCode::A => {
                                 trace!("{:?}", self.fences_vec)
                             }
                             _ => {}
@@ -361,7 +355,7 @@ impl ROT_Renderer {
     }
 }
 
-impl ROT_Renderer {
+impl Renderer {
     fn draw_frame(&mut self) {
         //get scoped variables for ease use
         let current_frame = self.current_frame;
@@ -415,7 +409,8 @@ impl ROT_Renderer {
         if image_available_fence != vk::Fence::null() {
             unsafe {
                 self.device
-                    .wait_for_fences(&[image_available_fence], true, u64::MAX);
+                    .wait_for_fences(&[image_available_fence], true, u64::MAX)
+                    .unwrap();
             }
         }
 
@@ -447,12 +442,12 @@ impl ROT_Renderer {
             .build();
 
         unsafe {
-            self.device.reset_fences(&[command_buffer_fence]);
+            self.device.reset_fences(&[command_buffer_fence]).unwrap();
 
             self.device
                 .queue_submit(self.graphics_queue, &[submit_info], command_buffer_fence)
+                .unwrap();
         }
-        .unwrap();
 
         let swapchains = vec![self.swapchain];
         let image_indices = vec![image_index];
@@ -499,7 +494,7 @@ impl ROT_Renderer {
         self.destroy_swapchain();
 
         let (swapchain_loader, swapchain, images_vec, extent) =
-            ROT_Renderer::build_swapchain_and_images(
+            Renderer::build_swapchain_and_images(
                 &self.instance_loader,
                 &self.device,
                 &self.phys_device,
@@ -509,16 +504,16 @@ impl ROT_Renderer {
                 &self.swpch_present_mode,
             );
         let image_view_vec =
-            ROT_Renderer::create_images_view(&self.device, &images_vec, &self.swpch_format);
+            Renderer::create_images_view(&self.device, &images_vec, &self.swpch_format);
         let graphics_pipeline = GraphicsPipeline::build(&self.device, &extent, &self.swpch_format);
-        let swapchain_framebuffer = ROT_Renderer::create_framebuffer(
+        let swapchain_framebuffer = Renderer::create_framebuffer(
             &self.device,
             &image_view_vec,
             graphics_pipeline.render_pass,
             &extent,
         );
         let command_buffer =
-            ROT_Renderer::create_command_buffer(&self.device, self.command_pool, images_vec.len());
+            Renderer::create_command_buffer(&self.device, self.command_pool, images_vec.len());
 
         self.swapchain_loader = swapchain_loader;
         self.swapchain = swapchain;
@@ -695,7 +690,7 @@ impl ROT_Renderer {
             let phys_device_memory_properties =
                 instance_loader.get_physical_device_memory_properties(*phys_device);
 
-            memory_id = ROT_Renderer::get_memory_id(
+            memory_id = Renderer::get_memory_id(
                 buffer_memory_requirement.memory_type_bits,
                 phys_device_memory_properties.memory_types,
                 phys_device_memory_properties.memory_type_count,
@@ -718,7 +713,7 @@ impl ROT_Renderer {
 
     fn create_framebuffer(
         device: &Device,
-        image_view_vec: &Vec<vk::ImageView>,
+        image_view_vec: &[vk::ImageView],
         render_pass: vk::RenderPass,
         extent: &vk::Extent2D,
     ) -> Vec<vk::Framebuffer> {
@@ -743,7 +738,7 @@ impl ROT_Renderer {
 
     fn create_images_view(
         device: &Device,
-        images: &Vec<vk::Image>,
+        images: &[vk::Image],
         format: &vk::SurfaceFormatKHR,
     ) -> Vec<vk::ImageView> {
         let swapchain_image_views = images
@@ -828,8 +823,8 @@ impl ROT_Renderer {
         instance_loader: &Instance,
         phys_device: &vk::PhysicalDevice,
         queue_family_index: u32,
-        device_extensions: &Vec<*const i8>,
-        device_layers: &Vec<*const i8>,
+        device_extensions: &[*const i8],
+        device_layers: &[*const i8],
     ) -> (Device, vk::Queue) {
         let queue_info = vec![vk::DeviceQueueCreateInfo::builder()
             .queue_family_index(queue_family_index)
@@ -856,11 +851,11 @@ impl ROT_Renderer {
         phys_device: &vk::PhysicalDevice,
         surface_loader: &Surface,
         surface: &vk::SurfaceKHR,
-    ) -> Option<(
+    ) -> (
         vk::SurfaceFormatKHR,
         vk::PresentModeKHR,
         vk::PhysicalDeviceProperties,
-    )> {
+    ) {
         unsafe {
             let mut format = None;
             let mut present_mode = None;
@@ -927,11 +922,11 @@ impl ROT_Renderer {
                     Some(instance_loader.get_physical_device_properties(*phys_device));
             }
 
-            Some((
+            (
                 format.unwrap(),
                 present_mode.unwrap(),
                 device_properties.unwrap(),
-            ))
+            )
         }
     }
 
@@ -1029,9 +1024,7 @@ impl ROT_Renderer {
             .enabled_extension_names(&instance_extension_raw)
             .build();
 
-        let instance = unsafe { entry.create_instance(&instance_info, None) }.unwrap();
-
-        instance
+        unsafe { entry.create_instance(&instance_info, None) }.unwrap()
     }
 
     fn build_debug_callback(

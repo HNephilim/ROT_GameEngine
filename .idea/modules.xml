@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/ROT_GUI_IMGUI/ROT_GUI_IMGUI.iml" filepath="$PROJECT_DIR$/ROT_GUI_IMGUI/ROT_GUI_IMGUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/ROT_Layer/ROT_Layer.iml" filepath="$PROJECT_DIR$/ROT_Layer/ROT_Layer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" filepath="$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ROT_WGPU_Renderer/ROT_WGPU_Renderer.iml" filepath="$PROJECT_DIR$/ROT_WGPU_Renderer/ROT_WGPU_Renderer.iml" />
     </modules>
   </component>
 </project>
