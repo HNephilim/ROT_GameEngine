@@ -81,26 +81,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ash"
-version = "0.32.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "06063a002a77d2734631db74e8f4ce7148b77fe522e6bca46f2ae7774fd48112"
-dependencies = [
- "libloading 0.7.0",
-]
-
-[[package]]
-name = "ash-window"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2d058436a3a8410c6e9b625c4e763ea6eaba97d771c303fc2c8e3595b666ffa3"
-dependencies = [
- "ash 0.32.1",
- "raw-window-handle",
- "raw-window-metal",
-]
-
-[[package]]
 name = "atty"
 version = "0.2.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -800,7 +780,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dabe88b1a5c91e0f969b441cc57e70364858066e4ba937deeb62065654ef9bd9"
 dependencies = [
  "arrayvec",
- "ash 0.31.0",
+ "ash",
  "byteorder",
  "core-graphics-types",
  "gfx-hal",
@@ -1595,18 +1575,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "raw-window-metal"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2cd21ed1cdef7f1b1579b972148ba6058b5b545959a14d91ea83c4f0ea9f289b"
-dependencies = [
- "cocoa",
- "core-graphics 0.22.2",
- "objc",
- "raw-window-handle",
-]
-
-[[package]]
 name = "rawpointer"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1687,19 +1655,6 @@ dependencies = [
  "log",
  "rot_events",
  "rot_wgpu",
-]
-
-[[package]]
-name = "rot_vk"
-version = "0.1.0"
-dependencies = [
- "ash 0.32.1",
- "ash-window",
- "log",
- "nalgebra",
- "rot_events",
- "vk-mem",
- "winit",
 ]
 
 [[package]]
@@ -1989,17 +1944,6 @@ name = "version_check"
 version = "0.9.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5a972e5669d67ba988ce3dc826706fb0a8b01471c088cb0b6110b805cc36aed"
-
-[[package]]
-name = "vk-mem"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c89db58563ea4fb34bd0394eb977c9c7ff7d16bf605f4eb945db7cab8c0c16f"
-dependencies = [
- "ash 0.32.1",
- "bitflags",
- "cc",
-]
 
 [[package]]
 name = "walkdir"

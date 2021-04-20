@@ -53,15 +53,13 @@ impl rot_layer::Layer for Game {
     fn on_attach(&mut self, renderer: &Renderer) {
         let texture_a = Texture::build(
             "test",
-            std::path::PathBuf::from(
-                "D:/ROT_GameEngine/ROT_WGPU_Renderer/src/texture/happy-tree.png",
-            ),
+            std::path::PathBuf::from("texture/happy-tree.png"),
             renderer,
         );
 
         let texture_b = Texture::build(
             "test",
-            std::path::PathBuf::from("D:/ROT_GameEngine/ROT_WGPU_Renderer/src/texture/america.png"),
+            std::path::PathBuf::from("texture/america.png"),
             renderer,
         );
 
@@ -103,10 +101,12 @@ impl rot_layer::Layer for Game {
                 TypeOfMouseEvent::Button => {}
                 TypeOfMouseEvent::Wheel => {}
                 TypeOfMouseEvent::Movement => {
+                    info!("{:?}", ev);
+
                     self.mouse_pos = (
-                        ev.mouse_movement.as_ref().unwrap().position.x,
-                        ev.mouse_movement.as_ref().unwrap().position.y,
-                    );
+                        ev.mouse_movement.as_ref().unwrap().position.x / 1280 as f64,
+                        ev.mouse_movement.as_ref().unwrap().position.y / 720 as f64,
+                    )
                 }
             },
             Event::KeyboardInput(ev) => match ev.virtual_keycode {

@@ -104,10 +104,7 @@ impl Texture {
         name: &str,
     ) -> (wgpu::ShaderModule, wgpu::ShaderModule) {
         // VERTEX ----------------------------------------------------
-        let vertex_path = format!(
-            "D:/ROT_GameEngine/ROT_WGPU_Renderer/src/shaders/{}.vert.spv",
-            name
-        );
+        let vertex_path = format!("shaders/{}.vert.spv", name);
         let vert_bytes = std::fs::read(vertex_path.clone()).unwrap();
         let vertex_module = renderer
             .device
@@ -118,10 +115,7 @@ impl Texture {
             });
 
         // FRAGMENT --------------------------------------------------
-        let frag_path = format!(
-            "D:/ROT_GameEngine/ROT_WGPU_Renderer/src/shaders/{}.frag.spv",
-            name
-        );
+        let frag_path = format!("shaders/{}.frag.spv", name);
         let frag_bytes = std::fs::read(frag_path.clone()).unwrap();
         let frag_module = renderer
             .device

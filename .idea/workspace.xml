@@ -13,57 +13,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="Rewriting VulkanRenderer to Ash">
-      <change afterPath="$PROJECT_DIR$/ROT_App/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/ROT_WGPU_Renderer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/light.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/uniform.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/vertex.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/compileshader.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/fragment.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/vertex.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/america.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/happy-tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/compileshader.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/fragment.frag.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.frag.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.vert.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/test.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/test.frag.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/test.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/test.vert.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/vertex.vert.spv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texture/america.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texture/happy-tree.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/output.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/log_rot.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/log_rot.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/keyboard.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_GUI_IMGUI/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerstack/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerstack/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/common/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/compileshader.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/fragment.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/vertex.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/sync_usage.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/compileshader.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/fragment.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/vertex.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/america.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/happy-tree.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/vert.spv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,13 +226,6 @@
       <item itemvalue="Cargo.Expand rot_vk [rot_wgpu]" />
       <item itemvalue="Shell Script.CompileShader" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Expand rot_vk [rot_wgpu]" />
-        <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
-        <item itemvalue="Cargo.Expand rot_events::rot_events::commom [rot_events]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="externalLinter" value="Clippy" />
