@@ -1,23 +1,21 @@
 use crate::rot_primitives::vertex::Vertex;
-use crate::Renderer;
 use crate::rot_primitives::Primitive;
+use crate::Renderer;
 use wgpu::{BindGroup, BindGroupLayout};
 
-pub struct Texture {
+pub struct Material {
     pub bind_group: wgpu::BindGroup,
     pub bind_group_layout: wgpu::BindGroupLayout,
-
 }
 
-impl Texture {
+impl Material {
     pub fn build(diffuse_src: std::path::PathBuf, renderer: &Renderer) -> Self {
-        let diffuse_texture = Texture::upload_image(diffuse_src.clone(), renderer);
-        let (viewer, sampler) = Texture::create_view_and_sampler(&diffuse_texture, renderer);
+        let diffuse_texture = Material::upload_image(diffuse_src.clone(), renderer);
+        let (viewer, sampler) = Material::create_view_and_sampler(&diffuse_texture, renderer);
 
-        let bind_group_layout = Texture::create_bind_group_layout(renderer);
+        let bind_group_layout = Material::create_bind_group_layout(renderer);
         let bind_group =
-            Texture::create_bind_group(renderer, &bind_group_layout, &viewer, &sampler);
-
+            Material::create_bind_group(renderer, &bind_group_layout, &viewer, &sampler);
 
         Self {
             bind_group,
@@ -140,13 +138,12 @@ impl Texture {
     }
 }
 
-impl Primitive for Texture{
+impl Primitive for Material {
     fn get_bind_group_layout(&self) -> &BindGroupLayout {
-       &self.bind_group_layout
+        &self.bind_group_layout
     }
 
     fn get_bind_group(&self) -> &BindGroup {
         &self.bind_group
     }
 }
-

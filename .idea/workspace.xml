@@ -4,48 +4,21 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ROT_GameEngine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/instance.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/compile.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="Fix the mouse as clear color">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/object.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/ROT_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/ROT_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_App/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/output.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/uniform.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mesh.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/material.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/compileshader.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/fragment.frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/pos_as_color.frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/pos_as_color.vert.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/test.frag" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/test.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/test.frag.spv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shaders/test.vert" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/test.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/test.vert.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/vertex.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.vert.spv" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/test.vert.spv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +40,7 @@
     <option name="directoryName" value="ikn2yv2r" />
   </component>
   <component name="ProjectId" id="1rS30HH1GCCXNzRZAScr45fE1pK" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -76,8 +49,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ROT_WGPU_Renderer" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -108,7 +83,9 @@
     </configuration>
   </component>
   <component name="RustProjectSettings">
+    <option name="externalLinter" value="Clippy" />
     <option name="newResolveEnabled" value="true" />
+    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>

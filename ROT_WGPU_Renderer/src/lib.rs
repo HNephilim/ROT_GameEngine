@@ -6,12 +6,11 @@ use wgpu::util::DeviceExt;
 use winit::window::Window;
 
 pub mod rot_primitives;
-use rot_primitives::{Model, Texture, Vertex, Camera};
+use rot_primitives::{Camera, Material, Mesh, Vertex};
 
 pub mod rot_pipeline;
 
 pub struct Renderer {
-
     //Command Buffer
     command_buffer: Option<Vec<wgpu::CommandBuffer>>,
     frame: Option<wgpu::SwapChainTexture>,
@@ -70,8 +69,8 @@ impl Renderer {
 impl Renderer {
     pub fn draw_frame(
         &mut self,
-        texture: &Texture,
-        model: &Model,
+        material: &Material,
+        mesh: &Mesh,
         camera: &Camera,
         render_pipeline: &rot_pipeline::Pipeline,
         clear_color: nalgebra::Vector3<f64>,
@@ -104,12 +103,12 @@ impl Renderer {
         });
 
         render_pass.set_pipeline(&render_pipeline.render_pipeline);
-        render_pass.set_bind_group(0, &texture.bind_group, &[]);
+        render_pass.set_bind_group(0, &material.bind_group, &[]);
         render_pass.set_bind_group(1, &camera.bind_group, &[]);
-        render_pass.set_vertex_buffer(0, model.vertex_buffer.slice(..));
-        render_pass.set_vertex_buffer(1, model.instance_buffer.slice(..));
-        render_pass.set_index_buffer(model.index_buffer.slice(..), wgpu::IndexFormat::Uint16);
-        render_pass.draw_indexed(0..model.len(), 0, 0..model.instances.len() as _);
+        render_pass.set_vertex_buffer(0, mesh.vertex_buffer.slice(..));
+        //render_pass.set_vertex_buffer(1, mesh.instance_buffer.slice(..));
+        render_pass.set_index_buffer(mesh.index_buffer.slice(..), wgpu::IndexFormat::Uint16);
+        render_pass.draw_indexed(0..mesh.len(), 0, 0..1);
 
         drop(render_pass);
 

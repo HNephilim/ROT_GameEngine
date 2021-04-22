@@ -1,26 +1,38 @@
+use crate::rot_primitives::{Camera, Instance, Material, Primitive, Vertex};
 use crate::Renderer;
-use crate::rot_primitives::{Vertex, Texture, Primitive, Camera, Instance};
 
-pub struct Pipeline{
+pub struct Pipeline {
     pub render_pipeline_layout: wgpu::PipelineLayout,
     pub render_pipeline: wgpu::RenderPipeline,
     pub vertex_module: wgpu::ShaderModule,
     pub fragment_module: wgpu::ShaderModule,
 }
 
-
-
-impl Pipeline{
-    pub fn new(renderer: &Renderer, texture: &Texture, camera: &Camera, shader_name: &str) -> Self {
-
+impl Pipeline {
+    pub fn new(
+        renderer: &Renderer,
+        texture: &Material,
+        camera: &Camera,
+        shader_name: &str,
+    ) -> Self {
         let render_pipeline_layout = Pipeline::create_pipeline_layout(renderer, texture, camera);
 
         let (vertex_module, fragment_module) =
             Pipeline::create_shader_modules(renderer, shader_name);
 
-        let render_pipeline = Pipeline::create_pipeline(renderer, &render_pipeline_layout, &vertex_module, &fragment_module);
+        let render_pipeline = Pipeline::create_pipeline(
+            renderer,
+            &render_pipeline_layout,
+            &vertex_module,
+            &fragment_module,
+        );
 
-        Self { render_pipeline_layout, render_pipeline, vertex_module, fragment_module }
+        Self {
+            render_pipeline_layout,
+            render_pipeline,
+            vertex_module,
+            fragment_module,
+        }
     }
 
     fn create_shader_modules(
@@ -54,8 +66,8 @@ impl Pipeline{
 
     fn create_pipeline_layout(
         renderer: &Renderer,
-        texture: &Texture,
-        camera: &Camera
+        texture: &Material,
+        camera: &Camera,
     ) -> wgpu::PipelineLayout {
         // LAYOUT -----------------------------------------------------
 
@@ -65,7 +77,7 @@ impl Pipeline{
                 label: Some("Render Pipeline Layout"),
                 bind_group_layouts: &[
                     texture.get_bind_group_layout(),
-                    camera.get_bind_group_layout()
+                    camera.get_bind_group_layout(),
                 ],
                 push_constant_ranges: &[],
             });
@@ -88,7 +100,7 @@ impl Pipeline{
                 vertex: wgpu::VertexState {
                     module: vertex_module,
                     entry_point: "main",
-                    buffers: &[Vertex::desc(), Instance::desc()],
+                    buffers: &[Vertex::desc()],
                 },
                 fragment: Some(wgpu::FragmentState {
                     module: fragment_module,
