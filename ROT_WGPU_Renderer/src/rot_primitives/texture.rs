@@ -1,17 +1,16 @@
 use crate::rot_primitives::vertex::Vertex;
 use crate::Renderer;
+use crate::rot_primitives::Primitive;
+use wgpu::{BindGroup, BindGroupLayout};
 
 pub struct Texture {
     pub bind_group: wgpu::BindGroup,
     pub bind_group_layout: wgpu::BindGroupLayout,
-    pub render_pipeline_layout: wgpu::PipelineLayout,
-    pub render_pipeline: wgpu::RenderPipeline,
-    pub vertex_module: wgpu::ShaderModule,
-    pub fragment_module: wgpu::ShaderModule,
+
 }
 
 impl Texture {
-    pub fn build(shader_name: &str, diffuse_src: std::path::PathBuf, renderer: &Renderer) -> Self {
+    pub fn build(diffuse_src: std::path::PathBuf, renderer: &Renderer) -> Self {
         let diffuse_texture = Texture::upload_image(diffuse_src.clone(), renderer);
         let (viewer, sampler) = Texture::create_view_and_sampler(&diffuse_texture, renderer);
 
@@ -19,113 +18,11 @@ impl Texture {
         let bind_group =
             Texture::create_bind_group(renderer, &bind_group_layout, &viewer, &sampler);
 
-        let (vertex_module, fragment_module) =
-            Texture::create_shader_modules(renderer, shader_name);
-        let render_pipeline_layout = Texture::create_pipeline_layout(renderer, &bind_group_layout);
-        let render_pipeline = Texture::create_pipeline(
-            renderer,
-            &render_pipeline_layout,
-            &vertex_module,
-            &fragment_module,
-        );
 
         Self {
             bind_group,
             bind_group_layout,
-            render_pipeline_layout,
-            render_pipeline,
-            vertex_module,
-            fragment_module,
         }
-    }
-
-    fn create_pipeline(
-        renderer: &Renderer,
-        render_pipeline_layout: &wgpu::PipelineLayout,
-        vertex_module: &wgpu::ShaderModule,
-        fragment_module: &wgpu::ShaderModule,
-    ) -> wgpu::RenderPipeline {
-        // CREATE -------------------------------------------------------
-        renderer
-            .device
-            .create_render_pipeline(&wgpu::RenderPipelineDescriptor {
-                label: Some("Render Pipeline"),
-                layout: Some(render_pipeline_layout),
-                vertex: wgpu::VertexState {
-                    module: vertex_module,
-                    entry_point: "main",
-                    buffers: &[Vertex::desc()],
-                },
-                fragment: Some(wgpu::FragmentState {
-                    module: fragment_module,
-                    entry_point: "main",
-                    targets: &[wgpu::ColorTargetState {
-                        format: renderer.swapchain_descriptor.format,
-                        alpha_blend: wgpu::BlendState::REPLACE,
-                        color_blend: wgpu::BlendState::REPLACE,
-                        write_mask: wgpu::ColorWrite::ALL,
-                    }],
-                }),
-                primitive: wgpu::PrimitiveState {
-                    topology: wgpu::PrimitiveTopology::TriangleList,
-                    strip_index_format: None,
-                    front_face: wgpu::FrontFace::Ccw,
-                    cull_mode: wgpu::CullMode::Back,
-                    polygon_mode: wgpu::PolygonMode::Fill,
-                },
-                depth_stencil: None,
-                multisample: wgpu::MultisampleState {
-                    count: 1,
-                    mask: !0,
-                    alpha_to_coverage_enabled: false,
-                },
-            })
-    }
-
-    fn create_pipeline_layout(
-        renderer: &Renderer,
-        bind_group_layout: &wgpu::BindGroupLayout,
-    ) -> wgpu::PipelineLayout {
-        // LAYOUT -----------------------------------------------------
-
-        let pipeline = renderer
-            .device
-            .create_pipeline_layout(&wgpu::PipelineLayoutDescriptor {
-                label: Some("Render Pipeline Layout"),
-                bind_group_layouts: &[&bind_group_layout],
-                push_constant_ranges: &[],
-            });
-
-        pipeline
-    }
-
-    fn create_shader_modules(
-        renderer: &Renderer,
-        name: &str,
-    ) -> (wgpu::ShaderModule, wgpu::ShaderModule) {
-        // VERTEX ----------------------------------------------------
-        let vertex_path = format!("shaders/{}.vert.spv", name);
-        let vert_bytes = std::fs::read(vertex_path.clone()).unwrap();
-        let vertex_module = renderer
-            .device
-            .create_shader_module(&wgpu::ShaderModuleDescriptor {
-                label: Some(vertex_path.as_str()),
-                source: wgpu::util::make_spirv(&vert_bytes),
-                flags: wgpu::ShaderFlags::VALIDATION,
-            });
-
-        // FRAGMENT --------------------------------------------------
-        let frag_path = format!("shaders/{}.frag.spv", name);
-        let frag_bytes = std::fs::read(frag_path.clone()).unwrap();
-        let frag_module = renderer
-            .device
-            .create_shader_module(&wgpu::ShaderModuleDescriptor {
-                label: Some(vertex_path.as_str()),
-                source: wgpu::util::make_spirv(&frag_bytes),
-                flags: wgpu::ShaderFlags::VALIDATION,
-            });
-
-        (vertex_module, frag_module)
     }
 
     fn create_bind_group(
@@ -242,3 +139,14 @@ impl Texture {
         diffuse_texture
     }
 }
+
+impl Primitive for Texture{
+    fn get_bind_group_layout(&self) -> &BindGroupLayout {
+       &self.bind_group_layout
+    }
+
+    fn get_bind_group(&self) -> &BindGroup {
+        &self.bind_group
+    }
+}
+

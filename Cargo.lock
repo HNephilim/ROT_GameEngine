@@ -51,9 +51,6 @@ dependencies = [
  "log",
  "nalgebra",
  "rot",
- "rot_events",
- "rot_layer",
- "rot_wgpu",
 ]
 
 [[package]]
@@ -1668,6 +1665,7 @@ dependencies = [
  "image",
  "log",
  "nalgebra",
+ "rot_events",
  "shaderc",
  "wgpu",
  "winit",

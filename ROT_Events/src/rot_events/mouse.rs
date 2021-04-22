@@ -1,12 +1,5 @@
 use crate::rot_events::commom::State;
 
-#[derive(Debug)]
-pub struct MouseEvent {
-    pub ev_type: TypeOfMouseEvent,
-    pub mouse_button: Option<MouseButton>,
-    pub mouse_wheel: Option<MouseWheel>,
-    pub mouse_movement: Option<MouseMovement>,
-}
 
 #[derive(Debug)]
 pub struct MouseButton {

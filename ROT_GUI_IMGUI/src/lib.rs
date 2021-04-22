@@ -1,6 +1,6 @@
 #[allow(unused_imports)]
 use imgui::{BackendFlags, Context, Key};
-use rot_events::Event_Base::{Event, State};
+use rot_events::event::{Event, State};
 use rot_events::{
     KeyboardInput::KeyCode,
     MouseInput::{Button, TypeOfMouseEvent},
@@ -46,47 +46,50 @@ impl Gui {
 }
 
 impl Layer for Gui {
-    fn on_attach(&mut self, renderer: &Renderer) {}
+    fn on_attach(&mut self, renderer: &mut Renderer) {}
 
     fn on_event(&mut self, event: &Event) {
         let io = self.context.io_mut();
         match event {
-            Event::MouseInput(ev) => match ev.ev_type {
-                TypeOfMouseEvent::Button => {
-                    let button = ev.mouse_button.as_ref().unwrap();
-                    let pressed = button.state == State::Pressed;
-                    match button.button {
-                        Button::Left => io.mouse_down[0] = pressed,
-                        Button::Right => io.mouse_down[1] = pressed,
-                        Button::Middle => io.mouse_down[2] = pressed,
-                        Button::Other(a) => io.mouse_down[a as usize] = pressed,
-                    }
-                }
-                TypeOfMouseEvent::Wheel => {
-                    let wheel = ev.mouse_wheel.as_ref().unwrap();
-                    io.mouse_wheel = wheel.line_delta.y as f32;
-                    io.mouse_wheel = wheel.line_delta.x as f32
-                }
-                TypeOfMouseEvent::Movement => {
-                    let movement = ev.mouse_movement.as_ref().unwrap();
-                    let x = movement.position.x / self.scale_factor;
-                    let y = movement.position.y / self.scale_factor;
-                    io.mouse_pos = [x as f32, y as f32];
-                }
-            },
-            Event::KeyboardInput(ev) => {
+            Event::MouseButton(ev) => {
                 let pressed = ev.state == State::Pressed;
-                let key = *ev.virtual_keycode.as_ref().unwrap();
-                io.keys_down[key as usize] = pressed;
-
-                match key {
-                    KeyCode::LShift | KeyCode::RShift => io.key_shift = pressed,
-                    KeyCode::LControl | KeyCode::RControl => io.key_ctrl = pressed,
-                    KeyCode::LAlt | KeyCode::RAlt => io.key_alt = pressed,
-                    KeyCode::LWin | KeyCode::RWin => io.key_super = pressed,
-                    _ => {}
+                match ev.button {
+                    Button::Left => io.mouse_down[0] = pressed,
+                    Button::Right => io.mouse_down[1] = pressed,
+                    Button::Middle => io.mouse_down[2] = pressed,
+                    Button::Other(a) => io.mouse_down[a as usize] = pressed,
                 }
             }
+            Event::MouseWheel(ev) => {
+
+                    io.mouse_wheel = ev.line_delta.y as f32;
+                    io.mouse_wheel = ev.line_delta.x as f32;
+            }
+            Event::MouseMovement(ev) => {
+
+                    let x = ev.position.x / self.scale_factor;
+                    let y = ev.position.y / self.scale_factor;
+                    io.mouse_pos = [x as f32, y as f32];
+            }
+            Event::KeyboardInput(ev) => {
+                match ev.virtual_keycode{
+                    None => {}
+                    Some(keycode) => {
+                        let pressed = ev.state == State::Pressed;
+                        io.keys_down[ev.virtual_keycode.unwrap() as usize] = pressed;
+
+                        match keycode {
+                            KeyCode::LShift | KeyCode::RShift => io.key_shift = pressed,
+                            KeyCode::LControl | KeyCode::RControl => io.key_ctrl = pressed,
+                            KeyCode::LAlt | KeyCode::RAlt => io.key_alt = pressed,
+                            KeyCode::LWin | KeyCode::RWin => io.key_super = pressed,
+                            _ => {}
+                        }
+                    }
+                }
+
+            }
+            _ => {}
         }
     }
 

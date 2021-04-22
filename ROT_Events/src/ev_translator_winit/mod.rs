@@ -1,18 +1,19 @@
 #[allow(unused_imports)]
 use log::{debug, error, info, trace, warn};
 
-use crate::rot_events::Event_Base::State;
+use crate::rot_events::event::State;
 use crate::rot_events::KeyboardInput::{KeyCode, KeyboardInputEvent};
 use crate::rot_events::MouseInput::{
-    Button, Coord, MouseButton, MouseEvent, MouseMovement, MouseWheel, TypeOfMouseEvent,
+    Button, Coord, MouseButton, MouseMovement, MouseWheel, TypeOfMouseEvent,
 };
 
 use winit::event::{
     ElementState, MouseButton as mb, MouseScrollDelta, VirtualKeyCode, WindowEvent,
 };
 
-pub fn mouse_event(event: &WindowEvent) -> Option<MouseEvent> {
-    match event {
+
+pub fn mouse_button(event: &WindowEvent) -> Option<MouseButton>{
+    match event{
         WindowEvent::MouseInput { state, button, .. } => {
             let rot_state = match state {
                 ElementState::Pressed => State::Pressed,
@@ -26,44 +27,46 @@ pub fn mouse_event(event: &WindowEvent) -> Option<MouseEvent> {
                 mb::Other(a) => Button::Other(*a),
             };
 
-            Some(MouseEvent {
-                ev_type: TypeOfMouseEvent::Button,
-                mouse_button: Some(MouseButton {
-                    state: rot_state,
-                    button: rot_button,
-                }),
-                mouse_wheel: None,
-                mouse_movement: None,
-            })
+            Some(MouseButton {
+                state: rot_state,
+                button: rot_button,
+                })
         }
-        WindowEvent::CursorMoved { position, .. } => Some(MouseEvent {
-            ev_type: TypeOfMouseEvent::Movement,
-            mouse_button: None,
-            mouse_wheel: None,
-            mouse_movement: Some(MouseMovement {
+
+        _ => {None}
+    }
+}
+
+pub fn mouse_movement(event: &WindowEvent) -> Option<MouseMovement>{
+    match event{
+        WindowEvent::CursorMoved { position, .. } => {
+            Some(MouseMovement {
                 position: Coord {
                     x: position.x,
                     y: position.y,
                 },
-            }),
-        }),
+            })
+        }
+        _ => {None}
+    }
+}
+
+pub fn mouse_wheel(event: &WindowEvent) -> Option<MouseWheel>{
+    match event{
         WindowEvent::MouseWheel { delta, .. } => {
             let (x, y) = match delta {
                 MouseScrollDelta::LineDelta(x, y) => (*x as f64, *y as f64),
                 MouseScrollDelta::PixelDelta(pos) => (pos.x, pos.y),
             };
-            Some(MouseEvent {
-                ev_type: TypeOfMouseEvent::Wheel,
-                mouse_button: None,
-                mouse_wheel: Some(MouseWheel {
+             Some(MouseWheel {
                     line_delta: Coord { x, y },
-                }),
-                mouse_movement: None,
-            })
+                })
+
         }
         _ => None,
     }
 }
+
 
 pub fn keyboard_input_event(event: &WindowEvent) -> Option<KeyboardInputEvent> {
     match event {

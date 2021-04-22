@@ -6,13 +6,15 @@ use wgpu::util::DeviceExt;
 use winit::window::Window;
 
 pub mod rot_primitives;
-use rot_primitives::{Model, Texture, Vertex};
-use wgpu::SwapChainTexture;
+use rot_primitives::{Model, Texture, Vertex, Camera};
+
+pub mod rot_pipeline;
 
 pub struct Renderer {
+
     //Command Buffer
     command_buffer: Option<Vec<wgpu::CommandBuffer>>,
-    frame: Option<SwapChainTexture>,
+    frame: Option<wgpu::SwapChainTexture>,
 
     //Present Stuff
     surface: wgpu::Surface,
@@ -70,6 +72,8 @@ impl Renderer {
         &mut self,
         texture: &Texture,
         model: &Model,
+        camera: &Camera,
+        render_pipeline: &rot_pipeline::Pipeline,
         clear_color: nalgebra::Vector3<f64>,
     ) -> Result<(), wgpu::SwapChainError> {
         let frame = self.swapchain.get_current_frame()?.output;
@@ -99,11 +103,13 @@ impl Renderer {
             depth_stencil_attachment: None,
         });
 
-        render_pass.set_pipeline(&texture.render_pipeline);
-        render_pass.set_vertex_buffer(0, model.vertex_buffer.slice(..));
+        render_pass.set_pipeline(&render_pipeline.render_pipeline);
         render_pass.set_bind_group(0, &texture.bind_group, &[]);
+        render_pass.set_bind_group(1, &camera.bind_group, &[]);
+        render_pass.set_vertex_buffer(0, model.vertex_buffer.slice(..));
+        render_pass.set_vertex_buffer(1, model.instance_buffer.slice(..));
         render_pass.set_index_buffer(model.index_buffer.slice(..), wgpu::IndexFormat::Uint16);
-        render_pass.draw_indexed(0..model.len(), 0, 0..1);
+        render_pass.draw_indexed(0..model.len(), 0, 0..model.instances.len() as _);
 
         drop(render_pass);
 

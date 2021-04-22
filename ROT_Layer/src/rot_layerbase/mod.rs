@@ -1,10 +1,10 @@
 #[allow(unused_imports)]
 use log::{debug, error, info, trace, warn};
-use rot_events::Event_Base::Event;
+use rot_events::event::Event;
 use rot_wgpu::Renderer;
 
 pub trait Layer {
-    fn on_attach(&mut self, renderer: &Renderer);
+    fn on_attach(&mut self, renderer: &mut Renderer);
 
     fn on_event(&mut self, event: &Event);
 

@@ -1896,3 +1896,17 @@ GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\Win
 object info: (type: INSTANCE, hndl: 2526227071104)
 
 [2021-04-19][23:35:31][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-20][18:45:00][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-20][18:45:00][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2421836743280)
+
+[2021-04-20][18:45:00][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2421836743280)
+
+[2021-04-20][18:45:00][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2421836743280)
+
+[2021-04-20][18:45:00][rot_wgpu][[32mINFO[0m] Renderer Built

@@ -1,78 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/ROT_Engine/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/ROT_App/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/ROT_Events/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/ROT_Layer/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="Rewriting VulkanRenderer to Ash">
-      <change afterPath="$PROJECT_DIR$/shaders/compileshader.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/fragment.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/pos_as_color.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/test.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/test.frag.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/test.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/test.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/vertex.vert.spv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texture/america.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/texture/happy-tree.png" afterDir="false" />
+    <list default="true" id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ROT_GameEngine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/instance.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/compile.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_App/ROT_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/ROT_App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/output.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/ROT_VK_Renderer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/common/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/graphics_pipeline/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/lib.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/compileshader.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/fragment.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/shaders/vertex.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_VK_Renderer/src/sync_usage.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/ROT_Engine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/commom.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/rot_events/mouse.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_GUI_IMGUI/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Layer/src/rot_layerbase/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/model.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/compileshader.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/fragment.frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/pos_as_color.vert.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.frag.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/test.vert.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/vertex.vert.spv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/america.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/texture/happy-tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/uniform.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/compileshader.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/fragment.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/pos_as_color.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/pos_as_color.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.frag" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/test.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.vert" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/test.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.vert.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/vertex.vert.spv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="GLSL Shader" />
-        <option value="Rust File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -83,13 +64,10 @@
     </file-type-list>
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="wlih63jr" />
+    <option name="directoryName" value="ikn2yv2r" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
-  <component name="ProjectId" id="1pFz6RXWdWw7nNPhu4bnGPCy6zX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1rS30HH1GCCXNzRZAScr45fE1pK" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -98,98 +76,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ROT_Primitives" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ROT_WGPU_Renderer" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ROT_GameEngine\ROT_WGPU_Renderer\src" />
-      <recent name="D:\ROT_GameEngine\ROT_VK_Renderer" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ROT_GameEngine\ROT_WGPU_Renderer\src\rot_primitives" />
-      <recent name="D:\ROT_GameEngine\ROT_Engine\src" />
+      <recent name="D:\ROT_GameEngine\ROT_WGPU_Renderer" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="cargo run" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Cargo.Run">
-    <configuration name="Expand rot_events::rot_events::commom [rot_events]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="expand --lib --color=always --theme=GitHub --tests rot_events::commom" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_Events" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Expand rot_gui [rot_events]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="expand --lib --color=always --theme=GitHub --tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_GUI_IMGUI" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Expand rot_vk [rot_wgpu]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="expand --lib --color=always --theme=GitHub --tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_VK_Renderer" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+  <component name="RunManager">
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
       <option name="command" value="run" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/ROT_App" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="test --package ROT_GameEngine --lib tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -203,117 +106,21 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompileShader" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders/compileshader.bat" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/ROT_WGPU_Renderer/src/shaders" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Cargo.Run" />
-      <item itemvalue="Cargo.Test" />
-      <item itemvalue="Cargo.Expand rot_events::rot_events::commom [rot_events]" />
-      <item itemvalue="Cargo.Expand rot_gui [rot_events]" />
-      <item itemvalue="Cargo.Expand rot_vk [rot_wgpu]" />
-      <item itemvalue="Shell Script.CompileShader" />
-    </list>
   </component>
   <component name="RustProjectSettings">
-    <option name="externalLinter" value="Clippy" />
     <option name="newResolveEnabled" value="true" />
-    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c1cdf2d2-4187-41cb-b6a5-661d66ef4489" name="Default Changelist" comment="" />
-      <created>1614793452474</created>
+      <changelist id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="" />
+      <created>1618955440907</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614793452474</updated>
+      <updated>1618955440907</updated>
     </task>
-    <task id="LOCAL-00001" summary="First commit">
-      <created>1614793633090</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1614793633090</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros.">
-      <created>1614811451305</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1614811451305</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros.">
-      <created>1614811624437</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1614811624438</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros.">
-      <created>1614811686434</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1614811686434</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Changing gitignore">
-      <created>1616896591569</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1616896591569</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Did a bunch of things">
-      <created>1616896983255</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1616896983255</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Finalizing commit">
-      <created>1616897419708</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1616897419708</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Receiving events, dealing with it, and render fixed stuff.">
-      <created>1617322258882</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1617322258882</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Dude i made a lot of things again">
-      <created>1618276451074</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1618276451074</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Rewriting VulkanRenderer to Ash">
-      <created>1618450977679</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1618450977679</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,23 +134,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/ROT_App" />
-      <path value="$PROJECT_DIR$/ROT_Engine" />
-    </ignored-roots>
-    <MESSAGE value="First commit" />
-    <MESSAGE value="Log system inplace&#10;&#10;just &quot;use use log::{debug, error, info, trace, warn}&quot; to fetch the log macros." />
-    <MESSAGE value="DUUDE I did a bunch of thing.&#10;&#10;Mainly now i can render stuff =) How to make it dinamic? Problem to Erick of Tomorrow.&#10;&#10;Got rid of ROT_Winit_Window. It made things confuse.&#10;Now windowing is dealt by the ROT_VK_Renderer.&#10;It now translate the winit events (on ROT_Events)&#10;&#10;Next step. HUD =)" />
-    <MESSAGE value="Changing gitignore" />
-    <MESSAGE value="Did a bunch of things" />
-    <MESSAGE value="Finalizing commit" />
-    <MESSAGE value="Receiving events, dealing with it, and render fixed stuff." />
-    <MESSAGE value="Dude i made a lot of things again" />
-    <MESSAGE value="Rewriting VulkanRenderer to Ash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewriting VulkanRenderer to Ash" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

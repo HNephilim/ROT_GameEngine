@@ -1,6 +1,8 @@
 //! # ROT_GameEngine
 //! this is where the magic happens
 
+pub mod prelude;
+
 use rot_wgpu::Renderer;
 
 mod log_rot;
@@ -10,7 +12,7 @@ use log::{debug, error, info, trace, warn};
 use rot_layer;
 use rot_layer::{Layer, LayerStack};
 
-use rot_events::{EventTranslator, Event_Base::Event as RotEvent};
+use rot_events::{EventTranslator, event::Event as RotEvent};
 
 use rot_gui::Gui;
 
@@ -123,7 +125,7 @@ impl ROT_Engine {
     pub fn run(mut self) {
         let mut engine = self.engine.take().unwrap();
         for layer in engine.layer_stack.stack() {
-            layer.on_attach(&engine.renderer)
+            layer.on_attach(&mut engine.renderer)
         }
 
         let event_loop = self.event_loop.take().unwrap();
@@ -142,13 +144,24 @@ impl ROT_Engine {
                         Some(ev) => engine.event_buffer.push(RotEvent::KeyboardInput(ev)),
                     }
                 }
-                WindowEvent::CursorMoved { .. }
-                | WindowEvent::MouseInput { .. }
-                | WindowEvent::MouseWheel { .. } => {
-                    let rot_event = EventTranslator::mouse_event(event);
+                WindowEvent::CursorMoved { .. } => {
+                    let rot_event = EventTranslator::mouse_movement(event);
                     match rot_event {
                         None => {}
-                        Some(ev) => engine.event_buffer.push(RotEvent::MouseInput(ev)),
+                        Some(ev) => engine.event_buffer.push(RotEvent::MouseMovement(ev)),
+                    }}
+                WindowEvent::MouseInput { .. } => {
+                    let rot_event = EventTranslator::mouse_button(event);
+                    match rot_event {
+                        None => {}
+                        Some(ev) => engine.event_buffer.push(RotEvent::MouseButton(ev)),
+                    }
+                }
+                WindowEvent::MouseWheel { .. } => {
+                    let rot_event = EventTranslator::mouse_wheel(event);
+                    match rot_event {
+                        None => {}
+                        Some(ev) => engine.event_buffer.push(RotEvent::MouseWheel(ev)),
                     }
                 }
                 WindowEvent::Resized(size) => {
