@@ -50,6 +50,8 @@ dependencies = [
  "futures",
  "log",
  "nalgebra",
+ "optick",
+ "optick-attr",
  "rot",
 ]
 
@@ -1432,6 +1434,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af8b08b04175473088b46763e51ee54da5f9a164bc162f615b91bc179dbf15a3"
 
 [[package]]
+name = "optick"
+version = "1.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d7e7ab6068cdba9928db83674b18fe7aa2efbaa9920698d260ecbaf7906c6548"
+
+[[package]]
+name = "optick-attr"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "79c60222acba5aa89351e413983ef7a932b51c2acceb40cc9fca64069320cd05"
+dependencies = [
+ "optick",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "owned_ttf_parser"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1618,6 +1637,8 @@ dependencies = [
  "chrono",
  "fern",
  "log",
+ "optick",
+ "optick-attr",
  "rot_events",
  "rot_gui",
  "rot_layer",
@@ -1665,6 +1686,8 @@ dependencies = [
  "image",
  "log",
  "nalgebra",
+ "optick",
+ "optick-attr",
  "rot_events",
  "shaderc",
  "wgpu",

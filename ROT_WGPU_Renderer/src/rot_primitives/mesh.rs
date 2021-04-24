@@ -8,18 +8,18 @@ use wgpu::util::DeviceExt;
 pub struct Mesh {
     pub index_buffer: wgpu::Buffer,
     pub vertex_buffer: wgpu::Buffer,
-    //pub instance_buffer: wgpu::Buffer,
+    pub instance_buffer: wgpu::Buffer,
     size: usize,
 
-    //pub instances: Vec<Instance>,
+    pub instances: Vec<Instance>,
     pub vertices: Vec<Vertex>,
 }
 
 impl Mesh {
+    #[optick_attr::profile]
     pub fn new(renderer: &Renderer, vertices: Vec<Vertex>, indices: Vec<u16>) -> Self {
-        /*
         let mut instances = Mesh::build_instances();
-        let instance_data = Mesh::get_instances_data(&instances);
+        let instance_data = Mesh::get_instances_data(&mut instances);
 
         let instance = renderer
             .device
@@ -28,8 +28,6 @@ impl Mesh {
                 contents: bytemuck::cast_slice(&instance_data),
                 usage: wgpu::BufferUsage::VERTEX,
             });
-
-         */
 
         let vertex = renderer
             .device
@@ -50,15 +48,21 @@ impl Mesh {
         Self {
             index_buffer: index,
             vertex_buffer: vertex,
-            //instance_buffer: instance,
+            instance_buffer: instance,
             size: indices.len(),
-            //instances,
+            instances,
             vertices,
         }
     }
 
-    fn get_instances_data(instances: &Vec<Instance>) -> Vec<InstanceUniform> {
-        instances.iter().map(|instance| instance.uniform).collect()
+    fn get_instances_data(instances: &mut Vec<Instance>) -> Vec<InstanceUniform> {
+        instances
+            .iter_mut()
+            .map(|instance| {
+                instance.update();
+                instance.uniform
+            })
+            .collect()
     }
 
     fn build_instances() -> Vec<Instance> {
@@ -72,20 +76,17 @@ impl Mesh {
         (0..num_of_instances_per_row)
             .flat_map(|z| {
                 (0..num_of_instances_per_row).map(move |x| {
-                    let position: na::Vector3<f32> =
+                    let translation: na::Vector3<f32> =
                         na::Vector3::new(x as f32, 0.0, z as f32) - instance_displacement;
 
-                    let rotation = if position == na::Vector3::new(0.0, 0.0, 0.0) {
-                        na::UnitQuaternion::new(na::Vector3::z() * 0.0)
+                    let axisangle = if translation == na::Vector3::new(0.0, 0.0, 0.0) {
+                        na::Vector3::z() * 0.0
                     } else {
-                        na::UnitQuaternion::new(
-                            position.normalize() * (45.0 / 180.0) * std::f32::consts::PI,
-                        )
+                        translation.normalize() * std::f32::consts::PI / 4.0
                     };
 
                     let mut instance = Instance {
-                        position,
-                        rotation,
+                        isometry: na::Isometry3::new(translation, axisangle),
                         uniform: Default::default(),
                     };
 

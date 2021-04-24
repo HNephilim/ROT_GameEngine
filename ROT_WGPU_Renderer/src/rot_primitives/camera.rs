@@ -26,6 +26,7 @@ pub struct Camera {
 }
 
 impl Camera {
+    #[optick_attr::profile]
     pub fn new(
         renderer: &Renderer,
         speed: f32,
@@ -76,6 +77,7 @@ impl Camera {
         self.controller.on_event(event);
     }
 
+    #[optick_attr::profile]
     pub fn on_update(&mut self, renderer: &Renderer) {
         self.controller.on_update(&mut self.camera_status);
         self.uniform.update(&self.camera_status);
@@ -152,11 +154,11 @@ unsafe impl Pod for CameraUniform {}
 
 impl CameraUniform {
     pub fn new(status: &CameraStatus) -> Self {
-        let view = na::Matrix4::look_at_rh(&status.eye, &status.target, &status.up);
+        let view = na::Matrix4::face_towards(&status.eye, &status.target, &status.up);
         let proj =
             na::Matrix4::new_perspective(status.aspect, status.fovy, status.znear, status.zfar);
 
-        let matrix = view * proj;
+        let matrix = OPENGL_TO_WGPU_MATRIX * proj * view;
 
         Self {
             view_proj: matrix.into(),
@@ -209,7 +211,7 @@ impl CameraController {
                 State::Pressed => match ev.virtual_keycode {
                     None => {}
                     Some(keycode) => match keycode {
-                        KeyCode::Space => self.is_up_pressed = true,
+                        KeyCode::LShift => self.is_up_pressed = true,
                         KeyCode::LAlt => self.is_down_pressed = true,
                         KeyCode::W => self.is_forward_pressed = true,
                         KeyCode::S => self.is_backward_pressed = true,
@@ -221,7 +223,7 @@ impl CameraController {
                 State::Released => match ev.virtual_keycode {
                     None => {}
                     Some(keycode) => match keycode {
-                        KeyCode::Space => self.is_up_pressed = false,
+                        KeyCode::LShift => self.is_up_pressed = false,
                         KeyCode::LAlt => self.is_down_pressed = false,
                         KeyCode::W => self.is_forward_pressed = false,
                         KeyCode::S => self.is_backward_pressed = false,
@@ -255,6 +257,14 @@ impl CameraController {
         if self.is_left_pressed {
             let right = forward.normalize().cross(&camera.up);
             camera.eye = camera.target - (forward - right * self.speed).normalize() * forward_mag;
+        }
+
+        if self.is_down_pressed {
+            camera.eye -= camera.up * self.speed;
+        }
+
+        if self.is_up_pressed {
+            camera.eye += camera.up * self.speed;
         }
     }
 }

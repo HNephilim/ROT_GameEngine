@@ -11,3 +11,10 @@ rot = {path = "../ROT_Engine"}
 log = "0.4.14"
 futures = "0.3.14"
 nalgebra = "0.26.1"
+
+optick = "1.3.4"
+optick-attr = "0.3.0"
+
+
+
+

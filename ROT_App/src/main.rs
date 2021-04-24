@@ -8,12 +8,11 @@ use rot::prelude as rot;
 
 use nalgebra as na;
 
+#[optick_attr::capture("/Captures/profile")]
 fn main() {
     let game = Game::build_boxed("Renderer Teste".to_string());
     let mut engine = block_on(rot::ROT_Engine::build([1280, 720], game));
     engine.run();
-
-    debug!("End of Run");
 }
 
 struct Game {
@@ -51,6 +50,7 @@ impl Game {
 }
 
 impl rot::Layer for Game {
+    #[optick_attr::profile]
     fn on_attach(&mut self, renderer: &mut rot::Renderer) {
         let texture_a =
             rot::Material::build(std::path::PathBuf::from("texture/happy-tree.png"), renderer);
@@ -58,7 +58,6 @@ impl rot::Layer for Game {
         let texture_b =
             rot::Material::build(std::path::PathBuf::from("texture/america.png"), renderer);
 
-        /*
         let vertices = vec![
             rot::Vertex {
                 position: [-0.0868241, 0.49240386, 0.0],
@@ -82,23 +81,6 @@ impl rot::Layer for Game {
             }, // E
         ];
 
-         */
-
-        let vertices = vec![
-            rot::Vertex {
-                position: [0.0, 0.866025, 0.0],
-                tex_coords: [0.5, 1.0],
-            },
-            rot::Vertex {
-                position: [-0.5, 0.0, 0.0],
-                tex_coords: [0.0, 0.0],
-            },
-            rot::Vertex {
-                position: [0.0, -0.5, 0.0],
-                tex_coords: [1.0, 0.0],
-            },
-        ];
-
         let indices: Vec<u16> = vec![0, 1, 4, 1, 2, 4, 2, 3, 4];
 
         let model = rot::Mesh::new(renderer, vertices, indices);
@@ -109,8 +91,8 @@ impl rot::Layer for Game {
             na::Point3::new(0.0, 1.0, 2.0),
             na::Point3::new(0.0, 0.0, 0.0),
             na::Vector3::y(),
-            (1280 / 720) as f32,
-            45.0,
+            (1280 / 800) as f32,
+            std::f32::consts::FRAC_PI_4,
             0.1,
             100.0,
         );
@@ -149,6 +131,7 @@ impl rot::Layer for Game {
         }
     }
 
+    #[optick_attr::profile]
     fn on_update(&mut self, renderer: &mut rot::Renderer, delta_time: f64) {
         self.cameras[0].on_update(renderer);
 

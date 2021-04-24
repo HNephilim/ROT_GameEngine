@@ -27,6 +27,7 @@ pub struct Renderer {
 }
 
 impl Renderer {
+    #[optick_attr::profile]
     pub async fn build(window: &Window) -> Self {
         info!("Building WGPU Renderer");
 
@@ -67,6 +68,7 @@ impl Renderer {
 }
 
 impl Renderer {
+    #[optick_attr::profile]
     pub fn draw_frame(
         &mut self,
         material: &Material,
@@ -106,9 +108,9 @@ impl Renderer {
         render_pass.set_bind_group(0, &material.bind_group, &[]);
         render_pass.set_bind_group(1, &camera.bind_group, &[]);
         render_pass.set_vertex_buffer(0, mesh.vertex_buffer.slice(..));
-        //render_pass.set_vertex_buffer(1, mesh.instance_buffer.slice(..));
+        render_pass.set_vertex_buffer(1, mesh.instance_buffer.slice(..));
         render_pass.set_index_buffer(mesh.index_buffer.slice(..), wgpu::IndexFormat::Uint16);
-        render_pass.draw_indexed(0..mesh.len(), 0, 0..1);
+        render_pass.draw_indexed(0..mesh.len(), 0, 0..100 as _);
 
         drop(render_pass);
 

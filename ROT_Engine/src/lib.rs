@@ -12,7 +12,7 @@ use log::{debug, error, info, trace, warn};
 use rot_layer;
 use rot_layer::{Layer, LayerStack};
 
-use rot_events::{EventTranslator, event::Event as RotEvent};
+use rot_events::{event::Event as RotEvent, EventTranslator};
 
 use rot_gui::Gui;
 
@@ -37,6 +37,7 @@ pub struct Engine {
 
 // public impl block
 impl Engine {
+    #[optick_attr::profile]
     pub async fn build(window: &winit::window::Window) -> Self {
         //log inicialization, enables the debug, error, info, trace, warn macros
         log_rot::setup_logger().unwrap();
@@ -74,6 +75,7 @@ impl Engine {
         self.event_buffer.clear();
     }
 
+    #[optick_attr::profile]
     fn update(&mut self, delta_time: f64) {
         for layer in self.layer_stack.stack() {
             layer.on_update(&mut self.renderer, delta_time)
@@ -81,6 +83,7 @@ impl Engine {
     }
 }
 
+use winit::platform::run_return::EventLoopExtRunReturn;
 use winit::{
     event::*,
     event_loop::{ControlFlow, EventLoop},
@@ -128,10 +131,10 @@ impl ROT_Engine {
             layer.on_attach(&mut engine.renderer)
         }
 
-        let event_loop = self.event_loop.take().unwrap();
+        let mut event_loop = self.event_loop.take().unwrap();
         let window = self.window.take().unwrap();
 
-        event_loop.run(move |event, _, control_flow| match event {
+        event_loop.run_return(move |event, _, control_flow| match event {
             Event::WindowEvent {
                 ref event,
                 window_id,
@@ -149,7 +152,8 @@ impl ROT_Engine {
                     match rot_event {
                         None => {}
                         Some(ev) => engine.event_buffer.push(RotEvent::MouseMovement(ev)),
-                    }}
+                    }
+                }
                 WindowEvent::MouseInput { .. } => {
                     let rot_event = EventTranslator::mouse_button(event);
                     match rot_event {

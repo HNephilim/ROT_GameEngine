@@ -100,7 +100,7 @@ impl Pipeline {
                 vertex: wgpu::VertexState {
                     module: vertex_module,
                     entry_point: "main",
-                    buffers: &[Vertex::desc()],
+                    buffers: &[Vertex::desc(), Instance::desc()],
                 },
                 fragment: Some(wgpu::FragmentState {
                     module: fragment_module,

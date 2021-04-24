@@ -9,6 +9,7 @@ pub struct Material {
 }
 
 impl Material {
+    #[optick_attr::profile]
     pub fn build(diffuse_src: std::path::PathBuf, renderer: &Renderer) -> Self {
         let diffuse_texture = Material::upload_image(diffuse_src.clone(), renderer);
         let (viewer, sampler) = Material::create_view_and_sampler(&diffuse_texture, renderer);
