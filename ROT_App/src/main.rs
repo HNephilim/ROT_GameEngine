@@ -7,8 +7,8 @@ use log::{debug, error, info, trace, warn};
 use rot::prelude as rot;
 
 use nalgebra as na;
+use rot::prelude::{Camera, Instance, Object, Pipeline};
 
-#[optick_attr::capture("/Captures/profile")]
 fn main() {
     let game = Game::build_boxed("Renderer Teste".to_string());
     let mut engine = block_on(rot::ROT_Engine::build([1280, 720], game));
@@ -18,12 +18,8 @@ fn main() {
 struct Game {
     name: String,
 
-    //Pipelines
-    render_pipelines: Vec<rot::Pipeline>,
-
     //Models
-    textures: Vec<rot::Material>,
-    models: Vec<rot::Mesh>,
+    object: Vec<Object>,
 
     //camera
     cameras: Vec<rot::Camera>,
@@ -37,9 +33,8 @@ impl Game {
     fn build_boxed(name: String) -> Box<Self> {
         let game = Game {
             name,
-            render_pipelines: Vec::new(),
-            textures: Vec::new(),
-            models: Vec::new(),
+
+            object: Vec::new(),
             cameras: Vec::new(),
             mouse_pos: (0.0, 0.0),
             space_toggle: false,
@@ -50,63 +45,49 @@ impl Game {
 }
 
 impl rot::Layer for Game {
-    #[optick_attr::profile]
     fn on_attach(&mut self, renderer: &mut rot::Renderer) {
-        let texture_a =
-            rot::Material::build(std::path::PathBuf::from("texture/happy-tree.png"), renderer);
-
-        let texture_b =
-            rot::Material::build(std::path::PathBuf::from("texture/america.png"), renderer);
-
-        let vertices = vec![
-            rot::Vertex {
-                position: [-0.0868241, 0.49240386, 0.0],
-                tex_coords: [0.4131759, 0.00759614],
-            }, // A
-            rot::Vertex {
-                position: [-0.49513406, 0.06958647, 0.0],
-                tex_coords: [0.0048659444, 0.43041354],
-            }, // B
-            rot::Vertex {
-                position: [-0.21918549, -0.44939706, 0.0],
-                tex_coords: [0.28081453, 0.949397057],
-            }, // C
-            rot::Vertex {
-                position: [0.35966998, -0.3473291, 0.0],
-                tex_coords: [0.85967, 0.84732911],
-            }, // D
-            rot::Vertex {
-                position: [0.44147372, 0.2347359, 0.0],
-                tex_coords: [0.9414737, 0.2652641],
-            }, // E
-        ];
-
-        let indices: Vec<u16> = vec![0, 1, 4, 1, 2, 4, 2, 3, 4];
-
-        let model = rot::Mesh::new(renderer, vertices, indices);
-
-        let camera = rot::Camera::new(
-            renderer,
-            0.2,
-            na::Point3::new(0.0, 1.0, 2.0),
-            na::Point3::new(0.0, 0.0, 0.0),
-            na::Vector3::y(),
-            (1280 / 800) as f32,
-            std::f32::consts::FRAC_PI_4,
-            0.1,
-            100.0,
+        let num_of_instances_per_row: u32 = 10;
+        let instance_displacement: na::Vector3<f32> = na::Vector3::new(
+            num_of_instances_per_row as f32 * 0.5,
+            0.0,
+            num_of_instances_per_row as f32 * 0.5,
         );
 
-        self.textures.push(texture_a);
-        self.textures.push(texture_b);
-        self.cameras.push(camera);
-        self.models.push(model);
+        let isometry_vec = (0..num_of_instances_per_row)
+            .flat_map(|z| {
+                (0..num_of_instances_per_row).map(move |x| {
+                    let translation: na::Vector3<f32> =
+                        na::Vector3::new(x as f32, 0.0, z as f32) - instance_displacement;
 
-        self.render_pipelines = self
-            .textures
-            .iter()
-            .map(|tex| rot::Pipeline::new(renderer, tex, &self.cameras[0], "test"))
+                    let axisangle = if translation == na::Vector3::new(0.0, 0.0, 0.0) {
+                        na::Vector3::z() * 0.0
+                    } else {
+                        translation.normalize() * std::f32::consts::PI / 4.0
+                    };
+
+                    na::Isometry3::new(translation, axisangle)
+                })
+            })
             .collect::<Vec<_>>();
+
+        let res_dir = std::path::Path::new(env!("OUT_DIR")).join("res");
+        let mut object = Object::load(renderer, res_dir.join("cube.obj"), "cube");
+        object.set_instance(renderer, isometry_vec);
+
+        self.object.push(object);
+
+        let camera = Camera::new(
+            renderer,
+            0.5,
+            na::Point3(0.0, 2.0, 0.0),
+            na::Point3(0.0, 0.0, 0.0),
+            na::Vector3::y(),
+            (16 / 9) as f32,
+            std::f32::consts::FRAC_PI_2,
+            0.01,
+            100.0,
+        );
+        self.cameras.push(camera);
     }
 
     fn on_event(&mut self, event: &rot::Event) {
@@ -131,23 +112,18 @@ impl rot::Layer for Game {
         }
     }
 
-    #[optick_attr::profile]
     fn on_update(&mut self, renderer: &mut rot::Renderer, delta_time: f64) {
-        self.cameras[0].on_update(renderer);
+        let clear_color = (self.mouse_pos.0, self.mouse_pos.1, 0.2);
+        for object in self.object.iter_mut() {
+            object.on_update(renderer)
+        }
+        for camera in self.cameras.iter_mut() {
+            camera.on_update(renderer);
+        }
 
-        let index = match self.space_toggle {
-            true => 1 as usize,
-            false => 0 as usize,
-        };
-        let clear_color = na::Vector3::new(self.mouse_pos.0, self.mouse_pos.1, 0.3);
-
-        renderer.draw_frame(
-            &self.textures[index],
-            &self.models[0],
-            &self.cameras[0],
-            &self.render_pipelines[index],
-            clear_color,
-        );
+        for object in self.object.iter() {
+            object.draw(renderer, &self.cameras[0], na::Vector3(clear_color))
+        }
     }
 
     fn get_name(&self) -> &String {

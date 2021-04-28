@@ -26,7 +26,6 @@ pub struct Camera {
 }
 
 impl Camera {
-    #[optick_attr::profile]
     pub fn new(
         renderer: &Renderer,
         speed: f32,
@@ -77,7 +76,6 @@ impl Camera {
         self.controller.on_event(event);
     }
 
-    #[optick_attr::profile]
     pub fn on_update(&mut self, renderer: &Renderer) {
         self.controller.on_update(&mut self.camera_status);
         self.uniform.update(&self.camera_status);

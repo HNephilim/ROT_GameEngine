@@ -21472,3 +21472,53 @@ object info: (type: INSTANCE, hndl: 2924159849184)
 [2021-04-23][18:36:46][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
 [2021-04-23][18:36:46][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
 [2021-04-23][18:36:46][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-26][21:17:55][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-26][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2080949966608)
+
+[2021-04-26][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2080949966608)
+
+[2021-04-26][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2080949966608)
+
+[2021-04-26][21:17:56][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-26][21:17:59][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-26][21:17:59][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-26][21:17:59][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-26][21:17:59][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-26][21:43:08][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-26][21:43:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2075590958960)
+
+[2021-04-26][21:43:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2075590958960)
+
+[2021-04-26][21:43:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2075590958960)
+
+[2021-04-26][21:43:09][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-26][21:43:12][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-26][21:43:12][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-26][21:43:12][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-26][21:43:12][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-27][21:53:21][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-27][21:53:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1905146520112)
+
+[2021-04-27][21:53:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1905146520112)
+
+[2021-04-27][21:53:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1905146520112)
+
+[2021-04-27][21:53:21][rot_wgpu][[32mINFO[0m] Renderer Built

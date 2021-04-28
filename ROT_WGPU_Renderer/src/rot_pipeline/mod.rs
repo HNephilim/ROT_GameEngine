@@ -5,20 +5,17 @@ pub struct Pipeline {
     pub render_pipeline_layout: wgpu::PipelineLayout,
     pub render_pipeline: wgpu::RenderPipeline,
     pub vertex_module: wgpu::ShaderModule,
-    pub fragment_module: wgpu::ShaderModule,
 }
 
 impl Pipeline {
     pub fn new(
         renderer: &Renderer,
-        texture: &Material,
-        camera: &Camera,
+        fragment_module: &wgpu::ShaderModule,
         shader_name: &str,
     ) -> Self {
-        let render_pipeline_layout = Pipeline::create_pipeline_layout(renderer, texture, camera);
+        let render_pipeline_layout = Pipeline::create_pipeline_layout(renderer);
 
-        let (vertex_module, fragment_module) =
-            Pipeline::create_shader_modules(renderer, shader_name);
+        let vertex_module = Pipeline::load_fragment_shader_module(renderer, shader_name);
 
         let render_pipeline = Pipeline::create_pipeline(
             renderer,
@@ -31,16 +28,12 @@ impl Pipeline {
             render_pipeline_layout,
             render_pipeline,
             vertex_module,
-            fragment_module,
         }
     }
 
-    fn create_shader_modules(
-        renderer: &Renderer,
-        name: &str,
-    ) -> (wgpu::ShaderModule, wgpu::ShaderModule) {
+    fn load_fragment_shader_module(renderer: &Renderer, name: &str) -> wgpu::ShaderModule {
         // VERTEX ----------------------------------------------------
-        let vertex_path = format!("shaders/{}.vert.spv", name);
+        let vertex_path = format!("shaders/test.vert.spv");
         let vert_bytes = std::fs::read(vertex_path.clone()).unwrap();
         let vertex_module = renderer
             .device
@@ -50,35 +43,62 @@ impl Pipeline {
                 flags: wgpu::ShaderFlags::VALIDATION,
             });
 
-        // FRAGMENT --------------------------------------------------
-        let frag_path = format!("shaders/{}.frag.spv", name);
-        let frag_bytes = std::fs::read(frag_path.clone()).unwrap();
-        let frag_module = renderer
-            .device
-            .create_shader_module(&wgpu::ShaderModuleDescriptor {
-                label: Some(vertex_path.as_str()),
-                source: wgpu::util::make_spirv(&frag_bytes),
-                flags: wgpu::ShaderFlags::VALIDATION,
-            });
-
-        (vertex_module, frag_module)
+        vertex_module
     }
 
-    fn create_pipeline_layout(
-        renderer: &Renderer,
-        texture: &Material,
-        camera: &Camera,
-    ) -> wgpu::PipelineLayout {
+    fn create_pipeline_layout(renderer: &Renderer) -> wgpu::PipelineLayout {
+        let material_layout =
+            renderer
+                .device
+                .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
+                    label: Some(&format!("Test Diffuse Bind Group Layout")),
+                    entries: &[
+                        wgpu::BindGroupLayoutEntry {
+                            binding: 0,
+                            visibility: wgpu::ShaderStage::FRAGMENT,
+                            ty: wgpu::BindingType::Texture {
+                                sample_type: wgpu::TextureSampleType::Float { filterable: false },
+                                view_dimension: wgpu::TextureViewDimension::D2,
+                                multisampled: false,
+                            },
+                            count: None,
+                        },
+                        wgpu::BindGroupLayoutEntry {
+                            binding: 1,
+                            visibility: wgpu::ShaderStage::FRAGMENT,
+                            ty: wgpu::BindingType::Sampler {
+                                filtering: true,
+                                comparison: false,
+                            },
+                            count: None,
+                        },
+                    ],
+                });
+
+        let camera_layout =
+            renderer
+                .device
+                .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
+                    label: Some("Camera Uniform Bind Group"),
+                    entries: &[wgpu::BindGroupLayoutEntry {
+                        binding: 0,
+                        visibility: wgpu::ShaderStage::VERTEX,
+                        ty: wgpu::BindingType::Buffer {
+                            ty: wgpu::BufferBindingType::Uniform,
+                            has_dynamic_offset: false,
+                            min_binding_size: None,
+                        },
+                        count: None,
+                    }],
+                });
+
         // LAYOUT -----------------------------------------------------
 
         let pipeline = renderer
             .device
             .create_pipeline_layout(&wgpu::PipelineLayoutDescriptor {
                 label: Some("Render Pipeline Layout"),
-                bind_group_layouts: &[
-                    texture.get_bind_group_layout(),
-                    camera.get_bind_group_layout(),
-                ],
+                bind_group_layouts: &[&material_layout, &camera_layout],
                 push_constant_ranges: &[],
             });
 
@@ -119,7 +139,14 @@ impl Pipeline {
                     cull_mode: wgpu::CullMode::Back,
                     polygon_mode: wgpu::PolygonMode::Fill,
                 },
-                depth_stencil: None,
+                depth_stencil: Some(wgpu::DepthStencilState {
+                    format: wgpu::TextureFormat::Depth32Float,
+                    depth_write_enabled: true,
+                    depth_compare: wgpu::CompareFunction::Less,
+                    stencil: wgpu::StencilState::default(),
+                    bias: wgpu::DepthBiasState::default(),
+                    clamp_depth: false,
+                }),
                 multisample: wgpu::MultisampleState {
                     count: 1,
                     mask: !0,

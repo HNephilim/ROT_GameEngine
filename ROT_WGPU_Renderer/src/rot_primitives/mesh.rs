@@ -6,33 +6,21 @@ use crate::rot_primitives::instance::{Instance, InstanceUniform};
 use wgpu::util::DeviceExt;
 
 pub struct Mesh {
+    pub name: String,
+
     pub index_buffer: wgpu::Buffer,
     pub vertex_buffer: wgpu::Buffer,
-    pub instance_buffer: wgpu::Buffer,
-    size: usize,
 
-    pub instances: Vec<Instance>,
+    pub size: usize,
     pub vertices: Vec<Vertex>,
 }
 
 impl Mesh {
-    #[optick_attr::profile]
-    pub fn new(renderer: &Renderer, vertices: Vec<Vertex>, indices: Vec<u16>) -> Self {
-        let mut instances = Mesh::build_instances();
-        let instance_data = Mesh::get_instances_data(&mut instances);
-
-        let instance = renderer
-            .device
-            .create_buffer_init(&wgpu::util::BufferInitDescriptor {
-                label: Some("Instance Buffer"),
-                contents: bytemuck::cast_slice(&instance_data),
-                usage: wgpu::BufferUsage::VERTEX,
-            });
-
+    pub fn new(renderer: &Renderer, vertices: Vec<Vertex>, indices: Vec<u32>, name: &str) -> Self {
         let vertex = renderer
             .device
             .create_buffer_init(&wgpu::util::BufferInitDescriptor {
-                label: Some("Vertex Buffer"),
+                label: Some(&format!("{} Vertex Buffer", name)),
                 contents: bytemuck::cast_slice(vertices.as_slice()),
                 usage: wgpu::BufferUsage::VERTEX,
             });
@@ -40,30 +28,20 @@ impl Mesh {
         let index = renderer
             .device
             .create_buffer_init(&wgpu::util::BufferInitDescriptor {
-                label: Some("Index Buffer"),
+                label: Some(&format!("{} Index Buffer", name)),
                 contents: bytemuck::cast_slice(indices.as_slice()),
                 usage: wgpu::BufferUsage::INDEX,
             });
 
         Self {
+            name: name.to_string(),
             index_buffer: index,
             vertex_buffer: vertex,
-            instance_buffer: instance,
             size: indices.len(),
-            instances,
             vertices,
         }
     }
-
-    fn get_instances_data(instances: &mut Vec<Instance>) -> Vec<InstanceUniform> {
-        instances
-            .iter_mut()
-            .map(|instance| {
-                instance.update();
-                instance.uniform
-            })
-            .collect()
-    }
+    /*
 
     fn build_instances() -> Vec<Instance> {
         let num_of_instances_per_row: u32 = 10;
@@ -96,6 +74,8 @@ impl Mesh {
             })
             .collect::<Vec<_>>()
     }
+
+     */
 
     pub fn len(&self) -> u32 {
         self.size as u32

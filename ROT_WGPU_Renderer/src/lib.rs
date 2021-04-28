@@ -6,11 +6,15 @@ use wgpu::util::DeviceExt;
 use winit::window::Window;
 
 pub mod rot_primitives;
-use rot_primitives::{Camera, Material, Mesh, Vertex};
+use crate::rot_primitives::Object;
+use rot_primitives::{Camera, DepthBufferTexture, Material, Mesh, Vertex};
 
 pub mod rot_pipeline;
 
 pub struct Renderer {
+    //DepthBuffer
+    depth_buffer: DepthBufferTexture,
+
     //Command Buffer
     command_buffer: Option<Vec<wgpu::CommandBuffer>>,
     frame: Option<wgpu::SwapChainTexture>,
@@ -27,7 +31,6 @@ pub struct Renderer {
 }
 
 impl Renderer {
-    #[optick_attr::profile]
     pub async fn build(window: &Window) -> Self {
         info!("Building WGPU Renderer");
 
@@ -50,9 +53,13 @@ impl Renderer {
         let (swapchain_descriptor, swapchain) =
             Renderer::create_swapchain(&device, &adapter, &surface, &size);
 
+        trace!("Creating DepthBuffer");
+        let depth_buffer = DepthBufferTexture::new(&device, &swapchain_descriptor, "depth_buffer");
+
         info!("Renderer Built");
 
         Renderer {
+            depth_buffer,
             command_buffer: Some(Vec::new()),
             frame: None,
             surface,
@@ -68,11 +75,9 @@ impl Renderer {
 }
 
 impl Renderer {
-    #[optick_attr::profile]
     pub fn draw_frame(
         &mut self,
-        material: &Material,
-        mesh: &Mesh,
+        object: &Object,
         camera: &Camera,
         render_pipeline: &rot_pipeline::Pipeline,
         clear_color: nalgebra::Vector3<f64>,
@@ -101,16 +106,30 @@ impl Renderer {
                     store: true,
                 },
             }],
-            depth_stencil_attachment: None,
+            depth_stencil_attachment: Some(wgpu::RenderPassDepthStencilAttachmentDescriptor {
+                attachment: &self.depth_buffer.view,
+                depth_ops: Some(wgpu::Operations {
+                    load: wgpu::LoadOp::Clear(1.0),
+                    store: true,
+                }),
+                stencil_ops: None,
+            }),
         });
 
         render_pass.set_pipeline(&render_pipeline.render_pipeline);
-        render_pass.set_bind_group(0, &material.bind_group, &[]);
+        render_pass.set_bind_group(0, &object.materials[0].bind_group, &[]);
         render_pass.set_bind_group(1, &camera.bind_group, &[]);
-        render_pass.set_vertex_buffer(0, mesh.vertex_buffer.slice(..));
-        render_pass.set_vertex_buffer(1, mesh.instance_buffer.slice(..));
-        render_pass.set_index_buffer(mesh.index_buffer.slice(..), wgpu::IndexFormat::Uint16);
-        render_pass.draw_indexed(0..mesh.len(), 0, 0..100 as _);
+        render_pass.set_vertex_buffer(0, object.meshes[0].vertex_buffer.slice(..));
+        render_pass.set_vertex_buffer(1, object.instance_buffer.slice(..));
+        render_pass.set_index_buffer(
+            object.meshes[0].index_buffer.slice(..),
+            wgpu::IndexFormat::Uint16,
+        );
+        render_pass.draw_indexed(
+            0..object.meshes[0].size as _,
+            0,
+            0..object.instances.len() as _,
+        );
 
         drop(render_pass);
 
@@ -141,6 +160,8 @@ impl Renderer {
         self.swapchain = self
             .device
             .create_swap_chain(&self.surface, &self.swapchain_descriptor);
+        self.depth_buffer =
+            DepthBufferTexture::new(&self.device, &self.swapchain_descriptor, "depth_buffer");
     }
 
     fn create_swapchain(

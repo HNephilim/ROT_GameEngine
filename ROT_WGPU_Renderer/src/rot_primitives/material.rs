@@ -1,26 +1,41 @@
-use crate::rot_primitives::vertex::Vertex;
 use crate::rot_primitives::Primitive;
 use crate::Renderer;
 use wgpu::{BindGroup, BindGroupLayout};
 
 pub struct Material {
+    pub name: String,
     pub bind_group: wgpu::BindGroup,
     pub bind_group_layout: wgpu::BindGroupLayout,
+
+    texture_view: wgpu::TextureView,
+    sampler: wgpu::Sampler,
+    pub fragment_module: wgpu::ShaderModule,
 }
 
 impl Material {
-    #[optick_attr::profile]
-    pub fn build(diffuse_src: std::path::PathBuf, renderer: &Renderer) -> Self {
-        let diffuse_texture = Material::upload_image(diffuse_src.clone(), renderer);
-        let (viewer, sampler) = Material::create_view_and_sampler(&diffuse_texture, renderer);
+    pub fn build(diffuse_src: std::path::PathBuf, renderer: &Renderer, name: &str) -> Self {
+        let diffuse_texture = Material::upload_image(diffuse_src.clone(), renderer, name);
+        let (texture_view, sampler) =
+            Material::create_view_and_sampler(&diffuse_texture, renderer, name);
 
-        let bind_group_layout = Material::create_bind_group_layout(renderer);
-        let bind_group =
-            Material::create_bind_group(renderer, &bind_group_layout, &viewer, &sampler);
+        let bind_group_layout = Material::create_bind_group_layout(renderer, name);
+        let bind_group = Material::create_bind_group(
+            renderer,
+            &bind_group_layout,
+            &texture_view,
+            &sampler,
+            name,
+        );
+
+        let fragment_module = Material::load_shader(renderer, name);
 
         Self {
+            name: name.to_string(),
             bind_group,
             bind_group_layout,
+            texture_view,
+            sampler,
+            fragment_module,
         }
     }
 
@@ -29,11 +44,12 @@ impl Material {
         layout: &wgpu::BindGroupLayout,
         viewer: &wgpu::TextureView,
         sampler: &wgpu::Sampler,
+        name: &str,
     ) -> wgpu::BindGroup {
         renderer
             .device
             .create_bind_group(&wgpu::BindGroupDescriptor {
-                label: Some("Diffuse bind group"),
+                label: Some(&format!("{} Diffuse Bind Group", name)),
                 layout: &layout,
                 entries: &[
                     wgpu::BindGroupEntry {
@@ -48,11 +64,11 @@ impl Material {
             })
     }
 
-    fn create_bind_group_layout(renderer: &Renderer) -> wgpu::BindGroupLayout {
+    fn create_bind_group_layout(renderer: &Renderer, name: &str) -> wgpu::BindGroupLayout {
         renderer
             .device
             .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
-                label: Some("Diffuse Bind Group Layout"),
+                label: Some(&format!("{} Diffuse Bind Group Layout", name)),
                 entries: &[
                     wgpu::BindGroupLayoutEntry {
                         binding: 0,
@@ -79,11 +95,12 @@ impl Material {
 
     fn create_view_and_sampler(
         texture: &wgpu::Texture,
-        rederer: &Renderer,
+        renderer: &Renderer,
+        name: &str,
     ) -> (wgpu::TextureView, wgpu::Sampler) {
         let diffuse_texture_view = texture.create_view(&wgpu::TextureViewDescriptor::default());
-        let diffuse_sampler = rederer.device.create_sampler(&wgpu::SamplerDescriptor {
-            label: Some("Sampler"),
+        let diffuse_sampler = renderer.device.create_sampler(&wgpu::SamplerDescriptor {
+            label: Some(&format!(" {} Sampler", name)),
             address_mode_u: wgpu::AddressMode::ClampToEdge,
             address_mode_v: wgpu::AddressMode::ClampToEdge,
             address_mode_w: wgpu::AddressMode::ClampToEdge,
@@ -96,10 +113,25 @@ impl Material {
         (diffuse_texture_view, diffuse_sampler)
     }
 
-    fn upload_image(path: std::path::PathBuf, renderer: &Renderer) -> wgpu::Texture {
+    fn load_shader(renderer: &Renderer, name: &str) -> wgpu::ShaderModule {
+        // FRAGMENT ----------------------------------------------------
+        let fragment_path = format!("shaders/test.vert.spv");
+        let frag_bytes = std::fs::read(fragment_path.clone()).unwrap();
+        let fragment_module = renderer
+            .device
+            .create_shader_module(&wgpu::ShaderModuleDescriptor {
+                label: Some(fragment_path.as_str()),
+                source: wgpu::util::make_spirv(&frag_bytes),
+                flags: wgpu::ShaderFlags::VALIDATION,
+            });
+
+        fragment_module
+    }
+
+    fn upload_image(path: std::path::PathBuf, renderer: &Renderer, name: &str) -> wgpu::Texture {
         let diffuse_bytes = std::fs::read(path).unwrap();
         let diffuse_image = image::load_from_memory(diffuse_bytes.as_slice()).unwrap();
-        let diffuse_rgba = diffuse_image.as_rgba8().unwrap();
+        let diffuse_rgba = diffuse_image.to_rgba8();
 
         use image::GenericImageView;
         let dimensions = diffuse_image.dimensions();
@@ -111,7 +143,7 @@ impl Material {
         };
 
         let diffuse_texture = renderer.device.create_texture(&wgpu::TextureDescriptor {
-            label: Some("diffuse texture"),
+            label: Some(&format!("{} diffuse texture", name)),
             size: texture_size,
             mip_level_count: 1,
             sample_count: 1,
@@ -126,7 +158,7 @@ impl Material {
                 mip_level: 0,
                 origin: wgpu::Origin3d::ZERO,
             },
-            diffuse_rgba,
+            diffuse_rgba.as_raw(),
             wgpu::TextureDataLayout {
                 offset: 0,
                 bytes_per_row: 4 * dimensions.0,

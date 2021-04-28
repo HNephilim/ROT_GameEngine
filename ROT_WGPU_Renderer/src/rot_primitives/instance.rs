@@ -2,18 +2,23 @@ use nalgebra as na;
 use nalgebra::UnitQuaternion;
 
 pub struct Instance {
-    //pub position: na::Vector3<f32>,
-    //pub rotation: UnitQuaternion<f32>,
     pub isometry: na::Isometry3<f32>,
 
     pub uniform: InstanceUniform,
 }
 
 impl Instance {
-    pub fn update(&mut self) {
-        let model: na::Matrix4<f32> = self.isometry.to_homogeneous();
+    pub fn new(isometry: na::Isometry3<f32>) -> Self {
+        Self {
+            isometry,
+            uniform: InstanceUniform {
+                model: isometry.to_homogeneous().into(),
+            },
+        }
+    }
 
-        self.uniform.model = model.into()
+    pub fn update(&mut self) {
+        self.uniform.model = self.isometry.to_homogeneous().into();
     }
 
     pub fn desc<'a>() -> wgpu::VertexBufferLayout<'a> {
@@ -43,6 +48,15 @@ impl Instance {
                 },
             ],
         }
+    }
+}
+
+impl Default for Instance {
+    fn default() -> Self {
+        let default_isometry =
+            na::Isometry3::new(na::Vector3::<f32>::new(0.0, 0.0, 0.0), na::Vector3::y());
+
+        Instance::new(default_isometry)
     }
 }
 
