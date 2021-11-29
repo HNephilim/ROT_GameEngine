@@ -58,7 +58,7 @@ impl Camera {
                 usage: wgpu::BufferUsage::UNIFORM | wgpu::BufferUsage::COPY_DST,
             });
 
-        let bind_group_layout = Camera::create_bind_group_layout(renderer);
+        let bind_group_layout = Camera::get_bind_group_layout(renderer);
 
         let bind_group = Camera::create_bind_group(renderer, &bind_group_layout, &buffer);
 
@@ -77,6 +77,8 @@ impl Camera {
     }
 
     pub fn on_update(&mut self, renderer: &Renderer) {
+        self.camera_status.aspect = (renderer.swapchain_descriptor.width as f32
+            / renderer.swapchain_descriptor.height as f32);
         self.controller.on_update(&mut self.camera_status);
         self.uniform.update(&self.camera_status);
         renderer
@@ -101,7 +103,7 @@ impl Camera {
             })
     }
 
-    fn create_bind_group_layout(renderer: &Renderer) -> wgpu::BindGroupLayout {
+    pub fn get_bind_group_layout(renderer: &Renderer) -> wgpu::BindGroupLayout {
         renderer
             .device
             .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
@@ -117,16 +119,6 @@ impl Camera {
                     count: None,
                 }],
             })
-    }
-}
-
-impl Primitive for Camera {
-    fn get_bind_group_layout(&self) -> &BindGroupLayout {
-        &self.bind_group_layout
-    }
-
-    fn get_bind_group(&self) -> &BindGroup {
-        &self.bind_group
     }
 }
 
@@ -152,11 +144,10 @@ unsafe impl Pod for CameraUniform {}
 
 impl CameraUniform {
     pub fn new(status: &CameraStatus) -> Self {
-        let view = na::Matrix4::face_towards(&status.eye, &status.target, &status.up);
-        let proj =
-            na::Matrix4::new_perspective(status.aspect, status.fovy, status.znear, status.zfar);
+        let view = na::Isometry3::look_at_rh(&status.eye, &status.target, &status.up);
+        let proj = na::Perspective3::new(status.aspect, status.fovy, status.znear, status.zfar);
 
-        let matrix = OPENGL_TO_WGPU_MATRIX * proj * view;
+        let matrix = OPENGL_TO_WGPU_MATRIX * proj.to_homogeneous() * view.to_homogeneous();
 
         Self {
             view_proj: matrix.into(),
@@ -164,11 +155,10 @@ impl CameraUniform {
     }
 
     pub fn update(&mut self, camera: &CameraStatus) {
-        let view = na::Matrix4::look_at_rh(&camera.eye, &camera.target, &camera.up);
-        let proj =
-            na::Matrix4::new_perspective(camera.aspect, camera.fovy, camera.znear, camera.zfar);
+        let view = na::Isometry3::look_at_rh(&camera.eye, &camera.target, &camera.up);
+        let proj = na::Perspective3::new(camera.aspect, camera.fovy, camera.znear, camera.zfar);
 
-        let matrix = OPENGL_TO_WGPU_MATRIX * proj * view;
+        let matrix = proj.to_homogeneous() * view.to_homogeneous();
 
         self.view_proj = matrix.into()
     }

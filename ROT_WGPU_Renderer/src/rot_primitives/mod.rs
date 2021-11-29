@@ -10,6 +10,7 @@ mod vertex;
 
 pub use camera::Camera;
 pub use instance::Instance;
+pub use light::Light;
 pub use material::Material;
 pub use mesh::Mesh;
 pub use object::Object;

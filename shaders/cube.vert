@@ -2,6 +2,7 @@
 
 layout(location=0) in vec3 a_position;
 layout(location=1) in vec2 a_tex_coords;
+layout(location=2) in vec3 a_normals;
 
 layout(location=5) in vec4 model_matrix_0;
 layout(location=6) in vec4 model_matrix_1;

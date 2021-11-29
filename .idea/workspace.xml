@@ -4,32 +4,49 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="Utilizing optick for time profiling">
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/depth_buffer.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/texture.rs" afterDir="false" />
+    <list default="true" id="460103a4-dc0e-4eb7-ba0d-b7a013d6b896" name="Default Changelist" comment="Building Abstractions">
+      <change afterPath="$PROJECT_DIR$/ROT_App/build.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/light.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/light.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2021_22_09_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2021_22_09__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_App/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_App/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Engine/src/prelude.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_Events/src/ev_translator_winit/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/build.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_pipeline/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/camera.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/instance.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/instance.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/light.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/light.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/material.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/material.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mesh.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mesh.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/object.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/object.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/vertex.rs" beforeDir="false" afterPath="$PROJECT_DIR$/ROT_WGPU_Renderer/src/rot_primitives/vertex.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cube-test/cube-diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cube-test/cube-normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cube-test/cube.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cube-test/cube.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/compile.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/compilelele.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/compilelele.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.frag.spv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/test.vert.spv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +77,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ROT_WGPU_Renderer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEST/LEARN/learn-wgpu/code/beginner/tutorial9-models" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -112,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619229359698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Building Abstractions">
+      <created>1619653161212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619653161212</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +153,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Utilizing optick for time profiling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utilizing optick for time profiling" />
+    <MESSAGE value="Building Abstractions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building Abstractions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

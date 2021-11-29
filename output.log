@@ -21522,3 +21522,1320 @@ GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WIN
 object info: (type: INSTANCE, hndl: 1905146520112)
 
 [2021-04-27][21:53:21][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:09:23][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:09:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2048221717568)
+
+[2021-04-29][20:09:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2048221717568)
+
+[2021-04-29][20:09:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2048221717568)
+
+[2021-04-29][20:09:24][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:11:08][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:11:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2394969619008)
+
+[2021-04-29][20:11:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2394969619008)
+
+[2021-04-29][20:11:09][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2394969619008)
+
+[2021-04-29][20:11:09][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:11:09][app][[32mINFO[0m] "D:\\ROT_GameEngine\\target\\debug\\build\\app-ad6290819a2a982f\\out\\res" path
+[2021-04-29][20:13:19][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:13:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2278712340944)
+
+[2021-04-29][20:13:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2278712340944)
+
+[2021-04-29][20:13:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2278712340944)
+
+[2021-04-29][20:13:19][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:13:19][app][[32mINFO[0m] "D:\\ROT_GameEngine\\target\\debug\\build\\app-ad6290819a2a982f\\out\\res" path
+[2021-04-29][20:15:10][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:15:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1395565523328)
+
+[2021-04-29][20:15:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1395565523328)
+
+[2021-04-29][20:15:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1395565523328)
+
+[2021-04-29][20:15:11][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:15:11][app][[32mINFO[0m] "model/" path
+[2021-04-29][20:15:11][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:15:11][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:15:11][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:15:11][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:15:56][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:15:56][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1276444017808)
+
+[2021-04-29][20:15:56][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1276444017808)
+
+[2021-04-29][20:15:56][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1276444017808)
+
+[2021-04-29][20:15:56][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:15:56][app][[32mINFO[0m] "model/" path
+[2021-04-29][20:15:56][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:15:56][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:15:56][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:15:56][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:17:13][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:17:13][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2800803832272)
+
+[2021-04-29][20:17:13][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2800803832272)
+
+[2021-04-29][20:17:13][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2800803832272)
+
+[2021-04-29][20:17:13][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:17:13][app][[32mINFO[0m] "model/" path
+[2021-04-29][20:17:13][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:17:13][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:17:13][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:17:13][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:19:23][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:19:23][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1658250064128)
+
+[2021-04-29][20:19:23][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1658250064128)
+
+[2021-04-29][20:19:23][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1658250064128)
+
+[2021-04-29][20:19:23][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:19:23][app][[32mINFO[0m] "model/" path
+[2021-04-29][20:19:23][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:19:23][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:19:23][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:19:23][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:22:54][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:22:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2674466943440)
+
+[2021-04-29][20:22:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2674466943440)
+
+[2021-04-29][20:22:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2674466943440)
+
+[2021-04-29][20:22:55][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:22:55][app][[32mINFO[0m] "model/" path
+[2021-04-29][20:24:39][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:24:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1331713375088)
+
+[2021-04-29][20:24:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1331713375088)
+
+[2021-04-29][20:24:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1331713375088)
+
+[2021-04-29][20:24:40][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:24:40][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:24:40][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:24:40][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:24:40][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:27:02][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:27:02][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1649138164016)
+
+[2021-04-29][20:27:02][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1649138164016)
+
+[2021-04-29][20:27:02][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1649138164016)
+
+[2021-04-29][20:27:03][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:27:03][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:27:03][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:27:03][gfx_backend_vulkan][[33mWARN[0m] 
+PERFORMANCE [UNASSIGNED-CoreValidation-Shader-OutputNotConsumed (101294395)] : Validation Performance Warning: [ UNASSIGNED-CoreValidation-Shader-OutputNotConsumed ] Object 0: handle = 0xdcba38000000001d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x609a13b | Vertex attribute at location 2 not consumed by vertex shader
+object info: (type: SHADER_MODULE, hndl: 15905086606663483421)
+
+[2021-04-29][20:28:34][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:28:34][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2460121506224)
+
+[2021-04-29][20:28:34][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2460121506224)
+
+[2021-04-29][20:28:34][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2460121506224)
+
+[2021-04-29][20:28:34][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:28:34][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:28:34][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:28:34][gfx_backend_vulkan][[33mWARN[0m] 
+PERFORMANCE [UNASSIGNED-CoreValidation-Shader-OutputNotConsumed (101294395)] : Validation Performance Warning: [ UNASSIGNED-CoreValidation-Shader-OutputNotConsumed ] Object 0: handle = 0xdcba38000000001d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x609a13b | Vertex attribute at location 2 not consumed by vertex shader
+object info: (type: SHADER_MODULE, hndl: 15905086606663483421)
+
+[2021-04-29][20:31:27][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:31:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2574774694368)
+
+[2021-04-29][20:31:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2574774694368)
+
+[2021-04-29][20:31:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2574774694368)
+
+[2021-04-29][20:31:28][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:31:28][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:31:28][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:31:28][gfx_backend_vulkan][[33mWARN[0m] 
+PERFORMANCE [UNASSIGNED-CoreValidation-Shader-OutputNotConsumed (101294395)] : Validation Performance Warning: [ UNASSIGNED-CoreValidation-Shader-OutputNotConsumed ] Object 0: handle = 0xdcba38000000001d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x609a13b | Vertex attribute at location 2 not consumed by vertex shader
+object info: (type: SHADER_MODULE, hndl: 15905086606663483421)
+
+[2021-04-29][20:33:19][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:33:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2201465516320)
+
+[2021-04-29][20:33:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2201465516320)
+
+[2021-04-29][20:33:19][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2201465516320)
+
+[2021-04-29][20:33:19][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:33:19][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:33:19][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:33:19][gfx_backend_vulkan][[33mWARN[0m] 
+PERFORMANCE [UNASSIGNED-CoreValidation-Shader-OutputNotConsumed (101294395)] : Validation Performance Warning: [ UNASSIGNED-CoreValidation-Shader-OutputNotConsumed ] Object 0: handle = 0xdcba38000000001d, type = VK_OBJECT_TYPE_SHADER_MODULE; | MessageID = 0x609a13b | Vertex attribute at location 2 not consumed by vertex shader
+object info: (type: SHADER_MODULE, hndl: 15905086606663483421)
+
+[2021-04-29][20:34:47][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:34:47][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2795810159760)
+
+[2021-04-29][20:34:47][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2795810159760)
+
+[2021-04-29][20:34:47][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2795810159760)
+
+[2021-04-29][20:34:47][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:34:47][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:34:47][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:35:10][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:35:11][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2625060273312)
+
+[2021-04-29][20:35:11][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2625060273312)
+
+[2021-04-29][20:35:11][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2625060273312)
+
+[2021-04-29][20:35:11][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:35:11][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:35:11][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:38:10][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:38:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2761306861776)
+
+[2021-04-29][20:38:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2761306861776)
+
+[2021-04-29][20:38:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2761306861776)
+
+[2021-04-29][20:38:10][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:38:10][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:38:10][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:40:17][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:40:18][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2456525836240)
+
+[2021-04-29][20:40:18][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2456525836240)
+
+[2021-04-29][20:40:18][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2456525836240)
+
+[2021-04-29][20:40:18][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:40:18][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:40:18][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:47:59][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:47:59][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1758017722688)
+
+[2021-04-29][20:47:59][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1758017722688)
+
+[2021-04-29][20:47:59][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1758017722688)
+
+[2021-04-29][20:47:59][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:47:59][rot_wgpu::rot_primitives::object][[32mINFO[0m] cube-diffuse.jpg
+[2021-04-29][20:48:00][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:48:00][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:49:39][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:49:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1156434965056)
+
+[2021-04-29][20:49:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1156434965056)
+
+[2021-04-29][20:49:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1156434965056)
+
+[2021-04-29][20:49:40][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:49:40][rot_wgpu::rot_primitives::object][[32mINFO[0m] "model\\cube-diffuse.jpg"
+[2021-04-29][20:49:40][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:49:40][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:52:25][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:52:26][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1392324706624)
+
+[2021-04-29][20:52:26][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1392324706624)
+
+[2021-04-29][20:52:26][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1392324706624)
+
+[2021-04-29][20:52:26][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:52:26][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:52:26][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:53:30][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:53:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2518284821040)
+
+[2021-04-29][20:53:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2518284821040)
+
+[2021-04-29][20:53:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2518284821040)
+
+[2021-04-29][20:53:31][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:53:31][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:53:31][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:53:31][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:08][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][20:57:08][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1934453556688)
+
+[2021-04-29][20:57:08][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1934453556688)
+
+[2021-04-29][20:57:08][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1934453556688)
+
+[2021-04-29][20:57:08][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][20:57:08][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][20:57:08][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][20:57:08][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:08][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:08][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:08][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][20:57:09][rot_wgpu::rot_primitives::object][[32mINFO[0m] Updating: [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:00:39][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:00:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2896265975584)
+
+[2021-04-29][21:00:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2896265975584)
+
+[2021-04-29][21:00:40][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2896265975584)
+
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:00:40][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:00:40][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:00:40][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:40][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:41][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:42][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:00:43][rot_wgpu][[32mINFO[0m] 1284 --- 1
+[2021-04-29][21:01:21][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:01:22][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2227141987696)
+
+[2021-04-29][21:01:22][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2227141987696)
+
+[2021-04-29][21:01:22][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2227141987696)
+
+[2021-04-29][21:01:22][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:01:22][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:01:22][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:01:22][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:02:31][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:02:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1956159811968)
+
+[2021-04-29][21:02:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1956159811968)
+
+[2021-04-29][21:02:31][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1956159811968)
+
+[2021-04-29][21:02:31][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:02:31][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:02:31][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:02:31][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.47942555, 0.0, 0.87758255]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:04:06][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:04:07][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2364353632016)
+
+[2021-04-29][21:04:07][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2364353632016)
+
+[2021-04-29][21:04:07][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2364353632016)
+
+[2021-04-29][21:04:07][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:04:07][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:04:07][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:10:27][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:10:27][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1873587073520)
+
+[2021-04-29][21:10:27][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1873587073520)
+
+[2021-04-29][21:10:27][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1873587073520)
+
+[2021-04-29][21:10:27][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:10:27][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:10:27][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:10:52][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:10:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 3118780977712)
+
+[2021-04-29][21:10:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 3118780977712)
+
+[2021-04-29][21:10:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 3118780977712)
+
+[2021-04-29][21:10:53][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:10:53][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:10:53][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:12:32][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:12:33][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2474080795680)
+
+[2021-04-29][21:12:33][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2474080795680)
+
+[2021-04-29][21:12:33][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2474080795680)
+
+[2021-04-29][21:12:33][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:12:33][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:12:33][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:12:33][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.0, 1.0]] } } }, translation: Translation { vector: Matrix { data: [[1.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:13:15][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:13:16][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2028932113104)
+
+[2021-04-29][21:13:16][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2028932113104)
+
+[2021-04-29][21:13:16][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2028932113104)
+
+[2021-04-29][21:13:16][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:13:16][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:13:16][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:13:16][app][[32mINFO[0m] [Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.0, 1.0]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }]
+[2021-04-29][21:17:54][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1355369129744)
+
+[2021-04-29][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1355369129744)
+
+[2021-04-29][21:17:55][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1355369129744)
+
+[2021-04-29][21:17:55][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:17:55][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:17:55][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:18:31][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:18:32][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2344677519024)
+
+[2021-04-29][21:18:32][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2344677519024)
+
+[2021-04-29][21:18:32][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2344677519024)
+
+[2021-04-29][21:18:32][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:18:32][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:18:32][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:18:54][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:18:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2366356851504)
+
+[2021-04-29][21:18:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2366356851504)
+
+[2021-04-29][21:18:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2366356851504)
+
+[2021-04-29][21:18:54][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:18:54][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:18:54][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:19:10][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:19:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2426760858512)
+
+[2021-04-29][21:19:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2426760858512)
+
+[2021-04-29][21:19:10][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2426760858512)
+
+[2021-04-29][21:19:10][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:19:10][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:19:10][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:20:53][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:20:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2051271625872)
+
+[2021-04-29][21:20:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2051271625872)
+
+[2021-04-29][21:20:54][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2051271625872)
+
+[2021-04-29][21:20:54][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:20:54][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:20:54][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:21:36][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:21:37][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1892516238160)
+
+[2021-04-29][21:21:37][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1892516238160)
+
+[2021-04-29][21:21:37][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1892516238160)
+
+[2021-04-29][21:21:37][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:21:37][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:21:37][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:23:28][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:23:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1748343327280)
+
+[2021-04-29][21:23:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1748343327280)
+
+[2021-04-29][21:23:28][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1748343327280)
+
+[2021-04-29][21:23:28][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059808, -0.27059808, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2611119, -0.27976274, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25063106, -0.28918973, 0.0, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23906045, -0.29882556, 0.0, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22630507, -0.30859783, 0.0, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21227457, -0.3184119, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.196889, -0.32814834, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.18008633, -0.3376619, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.16183127, -0.34678128, 0.0, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14212506, -0.35531268, 0.0, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 0.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27029788, -0.27029788, 0.01801986, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.26080236, -0.27943107, 0.018628739, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2503136, -0.2888234, 0.019254895, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2387372, -0.29842147, 0.019894766, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22597876, -0.30815285, 0.020543523, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21194877, -0.31792316, 0.021194877, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.1965681, -0.32761347, 0.021840898, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17977558, -0.3370792, 0.022471948, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.16153674, -0.3461502, 0.023076678, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14185357, -0.35463393, 0.023642262, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 1.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.26940337, -0.26940337, 0.03592045, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25988024, -0.27844313, 0.037125748, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24936846, -0.2877328, 0.038364373, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23777516, -0.29721895, 0.03962919, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2250082, -0.3068294, 0.040910583, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21098024, -0.31647032, 0.042196047, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.19561462, -0.3260244, 0.043469917, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17885286, -0.33534908, 0.044713214, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.1606628, -0.34427744, 0.04590366, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14104837, -0.35262087, 0.047016118, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 2.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.267932, -0.267932, 0.0535864, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25836486, -0.2768195, 0.0553639, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24781665, -0.2859423, 0.057188455, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23619735, -0.2952467, 0.059049338, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22341803, -0.30466095, 0.06093219, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.20939508, -0.3140926, 0.06281853, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.19405593, -0.32342654, 0.06468531, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17734605, -0.33252385, 0.06650477, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.15923719, -0.34122252, 0.0682445, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.13973624, -0.34934062, 0.06986812, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 3.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.26591203, -0.26591203, 0.070909865, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25628725, -0.2745935, 0.073224925, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24569206, -0.2834908, 0.075597554, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23404025, -0.2925503, 0.07801341, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22124735, -0.30170092, 0.08045358, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.20723471, -0.31085208, 0.082893886, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.19193503, -0.31989172, 0.08530446, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17529914, -0.32868585, 0.08764957, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.15730363, -0.3370792, 0.08988779, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.13795932, -0.34489828, 0.09197288, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 4.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.26338083, -0.26338083, 0.0877936, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25368822, -0.27180877, 0.09060293, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24303903, -0.28042966, 0.09347655, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23135176, -0.28918973, 0.096396565, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21854728, -0.29801905, 0.09933969, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2045529, -0.3068294, 0.10227645, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.18930767, -0.31551278, 0.10517093, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17276862, -0.32394114, 0.10798039, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.15491807, -0.3319673, 0.11065577, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.13577127, -0.33942822, 0.11314273, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 5.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2603831, -0.2603831, 0.10415324, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2506165, -0.26851767, 0.10740707, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23991026, -0.27681953, 0.11072782, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2281883, -0.2852354, 0.11409415, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21537767, -0.29369682, 0.11747873, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.20141235, -0.30211854, 0.120847404, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.18623835, -0.31039724, 0.12415889, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.16981967, -0.3184119, 0.12736474, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.15214472, -0.3260244, 0.13040976, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.13323328, -0.3330832, 0.13323328, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 6.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25696895, -0.25696895, 0.11991885, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2471262, -0.26477808, 0.1235631, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23636393, -0.27272758, 0.12727287, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2246119, -0.28076488, 0.13102362, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21180384, -0.2888234, 0.13478427, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.19788091, -0.29682136, 0.13851663, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.18279657, -0.30466095, 0.14217511, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.16652188, -0.31222853, 0.14570665, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14905155, -0.31939617, 0.14905155, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.13040976, -0.3260244, 0.15214472, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 7.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.25319168, -0.25319168, 0.13503554, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24327461, -0.26065138, 0.13901408, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2324611, -0.26822433, 0.14305297, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22068712, -0.2758589, 0.14712474, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.20789327, -0.2834908, 0.15119511, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.19402821, -0.29104233, 0.15522256, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17905289, -0.29842147, 0.15915813, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.16294548, -0.30552277, 0.16294548, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14570665, -0.31222853, 0.16652188, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.12736474, -0.3184119, 0.16981967, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 8.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.24910572, -0.24910572, 0.14946342, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23911999, -0.2562, 0.15371998, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-14.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22826338, -0.26338083, 0.15802848, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-13.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.21647844, -0.27059802, 0.16235882, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.20371285, -0.27779025, 0.16667415, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-11.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.1899226, -0.28488392, 0.17093034, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-10.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17507604, -0.29179338, 0.17507604, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.15915813, -0.29842147, 0.17905289, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-8.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14217511, -0.30466095, 0.18279657, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-7.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.124158904, -0.31039727, 0.18623838, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, -15.0, 9.0]] } } }
+[2021-04-29][21:23:28][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:23:28][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:25:58][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:25:58][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2048458923824)
+
+[2021-04-29][21:25:58][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2048458923824)
+
+[2021-04-29][21:25:58][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2048458923824)
+
+[2021-04-29][21:25:58][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38136157, 0.0, 0.031780127, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 1.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37357065, 0.0, 0.0830157, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 2.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 4.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 5.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.24904709, 0.0, 0.29055497, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 7.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.28602117, 0.0, 0.25424102, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 8.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:25:58][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:25:58][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:27:41][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:27:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2770349956896)
+
+[2021-04-29][21:27:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2770349956896)
+
+[2021-04-29][21:27:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2770349956896)
+
+[2021-04-29][21:27:41][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059808, 0.0, -0.27059808, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.23906045, 0.0, -0.29882556, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.196889, 0.0, -0.32814834, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.14212506, 0.0, -0.35531268, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.07505039, 0.0, -0.37525198, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, -0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.07505039, 0.0, -0.37525198, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.14212506, 0.0, -0.35531268, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.196889, 0.0, -0.32814834, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.23906045, 0.0, -0.29882556, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, -15.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.29882556, 0.0, -0.23906045, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, -0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17114125, 0.0, -0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.09281436, 0.0, -0.37125745, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, -0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.09281436, 0.0, -0.37125745, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, -0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.22961007, 0.0, -0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, -12.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.32814834, 0.0, -0.196889, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.30614674, 0.0, -0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059808, 0.0, -0.27059808, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2122746, 0.0, -0.3184119, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.121015124, 0.0, -0.3630454, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, -0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.121015124, 0.0, -0.3630454, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.2122746, 0.0, -0.3184119, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059808, 0.0, -0.27059808, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, -0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, -9.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.35531268, 0.0, -0.14212506, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, -0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3184119, 0.0, -0.2122746, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17114125, 0.0, -0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, -0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, -0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3184119, 0.0, -0.2122746, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3422825, 0.0, -0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, -6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37525198, 0.0, -0.07505039, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37125745, 0.0, -0.09281436, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3630454, 0.0, -0.121015124, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, -0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, -0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, -0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3422825, 0.0, -0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3630454, 0.0, -0.121015124, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.37125745, 0.0, -0.09281436, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, -3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.0, 1.0]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.38268346, 0.0, 0.0, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 0.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37525198, 0.0, 0.07505039, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.37125745, 0.0, 0.09281436, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3630454, 0.0, 0.121015124, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3630454, 0.0, 0.121015124, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.37125745, 0.0, 0.09281436, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 3.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.35531268, 0.0, 0.14212506, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:41][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.3184119, 0.0, 0.2122746, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3184119, 0.0, 0.2122746, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.3422825, 0.0, 0.17114125, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 6.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.32814834, 0.0, 0.196889, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059808, 0.0, 0.27059808, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.2122746, 0.0, 0.3184119, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.121015124, 0.0, 0.3630454, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.121015124, 0.0, 0.3630454, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.2122746, 0.0, 0.3184119, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059808, 0.0, 0.27059808, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.30614674, 0.0, 0.22961007, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 9.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.29882556, 0.0, 0.23906045, 0.92387956]] } } }, translation: Translation { vector: Matrix { data: [[-15.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-12.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-9.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-6.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[-0.09281436, 0.0, 0.37125745, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[-3.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.0, 0.0, 0.38268346, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[0.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.09281436, 0.0, 0.37125745, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[3.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.17114125, 0.0, 0.3422825, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[6.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.22961007, 0.0, 0.30614674, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[9.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][app][[32mINFO[0m] Isometry { rotation: Unit { value: Quaternion { coords: Matrix { data: [[0.27059805, 0.0, 0.27059805, 0.9238795]] } } }, translation: Translation { vector: Matrix { data: [[12.0, 0.0, 12.0]] } } }
+[2021-04-29][21:27:42][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:27:42][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:30:53][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:30:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1791416070432)
+
+[2021-04-29][21:30:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1791416070432)
+
+[2021-04-29][21:30:53][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1791416070432)
+
+[2021-04-29][21:30:53][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:30:53][app][[32mINFO[0m] 00
+[2021-04-29][21:30:53][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:30:53][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:31:41][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:31:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2437220856096)
+
+[2021-04-29][21:31:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2437220856096)
+
+[2021-04-29][21:31:41][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2437220856096)
+
+[2021-04-29][21:31:41][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:31:41][app][[32mINFO[0m] 
+  ┌   ┐
+  │ 0 │
+  │ 0 │
+  │ 0 │
+  └   ┘
+
+
+[2021-04-29][21:31:41][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:31:41][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:37:41][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:37:42][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2301384501264)
+
+[2021-04-29][21:37:42][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2301384501264)
+
+[2021-04-29][21:37:42][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2301384501264)
+
+[2021-04-29][21:37:42][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:37:42][app][[32mINFO[0m] 
+  ┌   ┐
+  │ 0 │
+  │ 0 │
+  │ 0 │
+  └   ┘
+
+
+[2021-04-29][21:37:42][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:37:42][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:43:24][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:43:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2718834618768)
+
+[2021-04-29][21:43:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2718834618768)
+
+[2021-04-29][21:43:24][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2718834618768)
+
+[2021-04-29][21:43:24][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:43:24][app][[32mINFO[0m] 
+  ┌   ┐
+  │ 0 │
+  │ 0 │
+  │ 0 │
+  └   ┘
+
+
+[2021-04-29][21:43:24][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:43:24][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-29][21:45:00][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-29][21:45:01][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 2199018793504)
+
+[2021-04-29][21:45:01][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 2199018793504)
+
+[2021-04-29][21:45:01][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 2199018793504)
+
+[2021-04-29][21:45:01][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-29][21:45:01][app][[32mINFO[0m] 
+  ┌   ┐
+  │ 0 │
+  │ 0 │
+  │ 0 │
+  └   ┘
+
+
+[2021-04-29][21:45:01][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-29][21:45:01][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride
+[2021-04-30][19:29:20][rot_wgpu][[32mINFO[0m] Building WGPU Renderer
+[2021-04-30][19:29:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_KHRONOS_validation (C:\VulkanSDK\1.2.170.0\Bin\.\VkLayer_khronos_validation.dll)
+object info: (type: INSTANCE, hndl: 1483679068704)
+
+[2021-04-30][19:29:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_RTSS (D:\RivaTuner Statistics Server\Vulkan\.\RTSSVkLayer64.dll)
+object info: (type: INSTANCE, hndl: 1483679068704)
+
+[2021-04-30][19:29:21][gfx_backend_vulkan][[32mINFO[0m] 
+GENERAL [Loader Message (0)] : Inserted device layer VK_LAYER_NV_optimus (C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_d67c20d727d4578c\.\nvoglv64.dll)
+object info: (type: INSTANCE, hndl: 1483679068704)
+
+[2021-04-30][19:29:21][rot_wgpu][[32mINFO[0m] Renderer Built
+[2021-04-30][19:29:21][app][[32mINFO[0m] 
+  ┌   ┐
+  │ 0 │
+  │ 0 │
+  │ 0 │
+  └   ┘
+
+
+[2021-04-30][19:29:21][naga::front::spv][[33mWARN[0m] Unknown decoration ColMajor
+[2021-04-30][19:29:21][naga::front::spv][[33mWARN[0m] Unknown decoration MatrixStride

@@ -5,7 +5,8 @@ use std::error::Error;
 use std::path::Path;
 use wgpu::util::DeviceExt;
 
-use crate::rot_pipeline::Pipeline;
+use crate::rot_pipeline::{Pipeline, PipelineBuilder};
+use log::Level::Info;
 use nalgebra as na;
 
 pub struct Object {
@@ -26,7 +27,7 @@ impl Object {
 
         let containing_folder = path.as_ref().parent().unwrap();
 
-        let mut materials: Vec<Material> = Vec::new();
+        let mut materials = Vec::new();
         for mat in obj_materials {
             let diffuse_path = mat.diffuse_texture;
 
@@ -37,9 +38,19 @@ impl Object {
             ));
         }
 
+        let pipeline_buider = PipelineBuilder {
+            name: format!("{} pipeline", name).as_str(),
+            uniform_material: true,
+            uniform_camera: true,
+            uniform_light: false,
+            vertex_shader_path: format!("shaders/{}.vert.spv", name).as_str(),
+            fragment_shader_path: format!("shaders/{}.frag.spv", name).as_str(),
+            vertex_buffer_layout: vec![Vertex::desc(), Instance::desc()],
+        };
+
         let pipelines = materials
             .iter()
-            .map(|material| Pipeline::new(renderer, &material.fragment_module, "test"))
+            .map(|material| Pipeline::new(renderer, pipeline_buider))
             .collect::<Vec<_>>();
 
         let mut meshes: Vec<Mesh> = Vec::new();
@@ -77,7 +88,7 @@ impl Object {
                 .create_buffer_init(&wgpu::util::BufferInitDescriptor {
                     label: Some(&format!("{} Index Buffer", name)),
                     contents: bytemuck::cast_slice(&[instances.uniform.model]),
-                    usage: wgpu::BufferUsage::VERTEX,
+                    usage: wgpu::BufferUsage::VERTEX | wgpu::BufferUsage::COPY_DST,
                 });
 
         Self {
@@ -127,41 +138,33 @@ impl Object {
                             .collect::<Vec<_>>()
                             .as_slice(),
                     ),
-                    usage: wgpu::BufferUsage::VERTEX,
+                    usage: wgpu::BufferUsage::VERTEX | wgpu::BufferUsage::COPY_DST,
                 });
     }
 
     pub fn set_instance(&mut self, renderer: &Renderer, isometries: Vec<na::Isometry3<f32>>) {
         self.instances.clear();
 
-        self.instances = isometries
-            .iter()
-            .map(|&isometry| Instance::new(isometry))
-            .collect();
-
-        self.instance_buffer =
-            renderer
-                .device
-                .create_buffer_init(&wgpu::util::BufferInitDescriptor {
-                    label: Some(&format!("{} Instance Buffer", &self.name)),
-                    contents: bytemuck::cast_slice(
-                        self.instances
-                            .iter()
-                            .map(|instance| instance.uniform.model)
-                            .collect::<Vec<_>>()
-                            .as_slice(),
-                    ),
-                    usage: wgpu::BufferUsage::VERTEX,
-                });
+        self.add_instance(renderer, isometries);
     }
 
-    pub fn draw(
-        &self,
-        renderer: &mut Renderer,
-        camera: &Camera,
-        clear_color: nalgebra::Vector3<f64>,
-    ) {
-        renderer.draw_frame(self, camera, &self.pipelines[0], clear_color);
+    pub fn draw(&self, renderer: &mut Renderer) {
+        let render_pass = renderer.get_render_pass();
+        render_pass.set_pipeline(&self.pipelines[0].render_pipeline);
+        render_pass.set_bind_group(0, &object.materials[0].bind_group, &[]);
+        render_pass.set_bind_group(1, &self.camera.unwrap().bind_group, &[]);
+        render_pass.set_vertex_buffer(0, object.meshes[0].vertex_buffer.slice(..));
+        render_pass.set_vertex_buffer(1, object.instance_buffer.slice(..));
+        render_pass.set_index_buffer(
+            object.meshes[0].index_buffer.slice(..),
+            wgpu::IndexFormat::Uint32,
+        );
+
+        render_pass.draw_indexed(
+            0..object.meshes[0].size as _,
+            0,
+            0..object.instances.len() as _,
+        );
     }
 
     pub fn on_update(&mut self, renderer: &Renderer) {

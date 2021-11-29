@@ -9,7 +9,6 @@ pub struct Material {
 
     texture_view: wgpu::TextureView,
     sampler: wgpu::Sampler,
-    pub fragment_module: wgpu::ShaderModule,
 }
 
 impl Material {
@@ -18,7 +17,7 @@ impl Material {
         let (texture_view, sampler) =
             Material::create_view_and_sampler(&diffuse_texture, renderer, name);
 
-        let bind_group_layout = Material::create_bind_group_layout(renderer, name);
+        let bind_group_layout = Material::get_bind_group_layout(renderer);
         let bind_group = Material::create_bind_group(
             renderer,
             &bind_group_layout,
@@ -64,11 +63,11 @@ impl Material {
             })
     }
 
-    fn create_bind_group_layout(renderer: &Renderer, name: &str) -> wgpu::BindGroupLayout {
+    pub(crate) fn get_bind_group_layout(renderer: &Renderer) -> wgpu::BindGroupLayout {
         renderer
             .device
             .create_bind_group_layout(&wgpu::BindGroupLayoutDescriptor {
-                label: Some(&format!("{} Diffuse Bind Group Layout", name)),
+                label: Some("Diffuse Bind Group Layout"),
                 entries: &[
                     wgpu::BindGroupLayoutEntry {
                         binding: 0,
@@ -115,7 +114,7 @@ impl Material {
 
     fn load_shader(renderer: &Renderer, name: &str) -> wgpu::ShaderModule {
         // FRAGMENT ----------------------------------------------------
-        let fragment_path = format!("shaders/test.vert.spv");
+        let fragment_path = format!("shaders/test.frag.spv");
         let frag_bytes = std::fs::read(fragment_path.clone()).unwrap();
         let fragment_module = renderer
             .device
@@ -168,15 +167,5 @@ impl Material {
         );
 
         diffuse_texture
-    }
-}
-
-impl Primitive for Material {
-    fn get_bind_group_layout(&self) -> &BindGroupLayout {
-        &self.bind_group_layout
-    }
-
-    fn get_bind_group(&self) -> &BindGroup {
-        &self.bind_group
     }
 }

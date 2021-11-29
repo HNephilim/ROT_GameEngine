@@ -11,7 +11,9 @@ use rot_primitives::{Camera, DepthBufferTexture, Material, Mesh, Vertex};
 
 pub mod rot_pipeline;
 
-pub struct Renderer {
+use nalgebra as na;
+
+pub struct Renderer<'a> {
     //DepthBuffer
     depth_buffer: DepthBufferTexture,
 
@@ -20,6 +22,7 @@ pub struct Renderer {
     frame: Option<wgpu::SwapChainTexture>,
 
     //Present Stuff
+    pub render_pass: Option<wgpu::RenderPass<'a>>,
     surface: wgpu::Surface,
     pub device: wgpu::Device,
     pub queue: wgpu::Queue,
@@ -28,9 +31,12 @@ pub struct Renderer {
 
     //Window & EventLoop
     pub size: winit::dpi::PhysicalSize<u32>,
+
+    clear_color: na::Vector3<f64>,
+    camera: Option<&'a Camera>,
 }
 
-impl Renderer {
+impl<'a> Renderer<'a> {
     pub async fn build(window: &Window) -> Self {
         info!("Building WGPU Renderer");
 
@@ -58,29 +64,44 @@ impl Renderer {
 
         info!("Renderer Built");
 
+        let clear_color = na::Vector3::new(0.0, 0.0, 0.0);
+
         Renderer {
             depth_buffer,
             command_buffer: Some(Vec::new()),
             frame: None,
+            render_pass: None,
             surface,
             device,
             queue,
             swapchain_descriptor,
             swapchain,
             size,
+            clear_color,
+            camera: None,
         }
     }
 
     pub fn destroy(&mut self) {}
+
+    pub fn set_clear_color(&mut self, color_rgb: [f64; 3]) {
+        self.clear_color = na::Vector3::new(color_rgb[0], color_rgb[1], color_rgb[2]);
+    }
+
+    pub fn set_camera(&mut self, camera: &Camera) {
+        self.camera = Some(camera);
+    }
 }
 
 impl Renderer {
-    pub fn draw_frame(
+    pub(crate) fn get_render_pass(&mut self) -> &mut wgpu::RenderPass {
+        self.render_pass.as_mut().unwrap()
+    }
+
+    pub(crate) fn draw_frame(
         &mut self,
         object: &Object,
-        camera: &Camera,
         render_pipeline: &rot_pipeline::Pipeline,
-        clear_color: nalgebra::Vector3<f64>,
     ) -> Result<(), wgpu::SwapChainError> {
         let frame = self.swapchain.get_current_frame()?.output;
 
@@ -98,9 +119,9 @@ impl Renderer {
                 resolve_target: None,
                 ops: wgpu::Operations {
                     load: wgpu::LoadOp::Clear(wgpu::Color {
-                        r: clear_color[0],
-                        g: clear_color[1],
-                        b: clear_color[2],
+                        r: self.clear_color[0],
+                        g: self.clear_color[1],
+                        b: self.clear_color[2],
                         a: 1.0,
                     }),
                     store: true,
@@ -116,22 +137,7 @@ impl Renderer {
             }),
         });
 
-        render_pass.set_pipeline(&render_pipeline.render_pipeline);
-        render_pass.set_bind_group(0, &object.materials[0].bind_group, &[]);
-        render_pass.set_bind_group(1, &camera.bind_group, &[]);
-        render_pass.set_vertex_buffer(0, object.meshes[0].vertex_buffer.slice(..));
-        render_pass.set_vertex_buffer(1, object.instance_buffer.slice(..));
-        render_pass.set_index_buffer(
-            object.meshes[0].index_buffer.slice(..),
-            wgpu::IndexFormat::Uint16,
-        );
-        render_pass.draw_indexed(
-            0..object.meshes[0].size as _,
-            0,
-            0..object.instances.len() as _,
-        );
-
-        drop(render_pass);
+        self.render_pass = Some(render_pass);
 
         let mut cmd_encoder_finished = cmd_encoder
             .into_iter()

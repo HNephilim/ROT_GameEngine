@@ -77,14 +77,5 @@ fn main() -> Result<()> {
         write(shader.spirv_path, compiled.as_binary_u8())?;
     }
 
-    println!("cargo: rerun-if_changed=model/*");
-
-    let out_dir = env::var("OUT_DIR")?;
-    let mut copy_options = CopyOptions::new();
-    copy_options.overwrite = true;
-    let mut paths_to_copy = Vec::new();
-    paths_to_copy.push("model/*");
-    copy_items(&paths_to_copy, out_dir, &copy_options);
-
     Ok(())
 }
